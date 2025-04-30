@@ -36,44 +36,33 @@
           <a href="join.html">Join</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="login.html">Login</a>
       </div>
+      <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const userId = localStorage.getItem("userId");
+      const navButtons = document.getElementById("nav-buttons");
 
-  </body>
-<script>
-    // 로그인 상태 확인
-    const userId = localStorage.getItem("userId"); // 로그인 시 저장한 사용자 ID
-    const navButtons = document.getElementById("nav-buttons");
-
-    if (userId) {
-      // 로그인된 경우
-      navButtons.innerHTML = `
-        <a href="mypage.html">MyPage</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#" id="logoutBtn">Logout</a>
-      `;
-
-      document.addEventListener("DOMContentLoaded", () => {
-    const userId = localStorage.getItem("userId"); // 로그인 시 저장한 사용자 ID
-    const navButtons = document.getElementById("nav-buttons");
-
-    if (userId) {
+      if (userId) {
+        // 로그인 상태
         navButtons.innerHTML = `
-            <a href="mypage.html">MyPage</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#" id="logoutBtn">Logout</a>
+          <a href="mypage.html">MyPage</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#" id="logoutBtn">Logout</a>
         `;
 
-        // 로그아웃 기능
-        const logoutBtn = document.getElementById("logoutBtn");
-        logoutBtn.addEventListener("click", () => {
-            localStorage.removeItem("userId");
-            alert("로그아웃 되었습니다.");
-            window.location.href = "login.html";
+        // 로그아웃 이벤트 등록
+        document.getElementById("logoutBtn").addEventListener("click", () => {
+          localStorage.removeItem("userId");
+          alert("로그아웃 되었습니다.");
+          window.location.href = "main.html";
         });
-    } else {
+      } else {
+        // 비로그인 상태
         navButtons.innerHTML = `
-            <a href="join.html">Join</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="login.html">Login</a>
+          <a href="join.html">Join</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="login.html">Login</a>
         `;
-    }
-});
+      }
+    });
 </script>
+</body>
 </html>
 
