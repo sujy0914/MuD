@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mud</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="recommended-songs">
+        <div class="div">
+        <div class="overlap">
+            <div class="overlap-group">
+            <div class="text-wrapper">MuD</div>
+            <img class="image" src="img/image 31.png" />
+            </div>
+            <div class="mypage-logout">
+            MyPage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LogOut
+            </div>
+        </div>
+        <div class="overlap-2">
+            <div class="text-wrapper-2">오늘의 기분: 기쁨</div>
+            <div class="text-wrapper-3">오늘의 날씨: 맑음</div>
+            <div class="text-wrapper-4">작성한 시간: Night</div>
+            <img class="img" src="img/image.png" />
+            <img class="image-2" src="img/image 30.png" />
+        </div>
+        <img class="image-3" src="img/image 32.png" />
+        <div class="overlap-group-2">
+            <div class="overlap-3">
+            <img class="line" src="img/line 36.svg" />
+            <div class="text-wrapper-5">1</div>
+            <div class="text-wrapper-6">10</div>
+            <div class="text-wrapper-7">9</div>
+            <div class="text-wrapper-8">8</div>
+            <div class="text-wrapper-9">7</div>
+            <div class="text-wrapper-10">6</div>
+            <div class="text-wrapper-11">5</div>
+            <div class="text-wrapper-12">4</div>
+            <div class="text-wrapper-13">3</div>
+            <div class="text-wrapper-14">2</div>
+            <img class="line-2" src="img/line 21.svg" />
+            <img class="line-3" src="img/line 22.svg" />
+            <img class="play-circle" src="img/play circle.svg" />
+            <img class="play-circle-2" src="img/play circle.svg" />
+            <img class="line-4" src="img/line 23.svg" />
+            <img class="line-5" src="img/line 24.svg" />
+            <img class="line-6" src="img/line 25.svg" />
+            <img class="line-7" src="img/line 26.svg" />
+            <img class="line-8" src="img/line 27.svg" />
+            <img class="line-9" src="img/line 28.svg" />
+            <img class="line-10" src="img/line 29.svg" />
+            <img class="line-11" src="img/line 33.svg" />
+            <img class="line-12" src="img/line 34.svg" />
+            <img class="line-13" src="img/line 35.svg" />
+            <div class="text-wrapper-15">Tittle</div>
+            <div class="text-wrapper-16">Singer</div>
+            </div>
+            <img class="play-circle-3" src="img/play circle.svg" />
+            <img class="play-circle-4" src="img/play circle.svg" />
+            <img class="play-circle-5" src="img/play circle.svg" />
+            <img class="play-circle-6" src="img/play circle.svg" />
+            <img class="play-circle-7" src="img/play circle.svg" />
+            <img class="play-circle-8" src="img/play circle.svg" />
+            <img class="play-circle-9" src="img/play circle.svg" />
+            <img class="play-circle-10" src="img/play circle.svg" />
+        </div>
+        <p class="p">“맑은 밤, 기분 좋은 당신을 위한 팝과 재즈 믹스!”</p>
+        <div class="text-wrapper-17">※새로고침은 한 번만 가능합니다.</div>
+        <div class="text-wrapper-18">추천 노래 10곡</div>
+        </div>
+    </div>
+    <script>
+        fetch('header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+    </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mud</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+        <div class="saved-songs-page">
+            <div class="div">
+            <div class="overlap-group">
+                <div class="overlap">
+                <div class="text-wrapper">MuD</div>
+                <img class="image" src="img/image 14.png" />
+                </div>
+                <div class="mypage-logout">
+                MyPage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LogOut
+                </div>
+            </div>
+            <div class="text-wrapper-2">Tittle</div>
+            <div class="text-wrapper-3">Singer</div>
+            <div class="text-wrapper-4">저장한 노래</div>
+            <img class="img" src="img/image 34.png" />
+            </div>
+        </div>
+        <script>
+            fetch('header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mud</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+        <div class="diary-page">
+            <div class="div">
+            <div class="overlap-group">
+                <div class="overlap">
+                <div class="text-wrapper">MuD</div>
+                <img class="image" src="img/image 30.png" />
+                </div>
+                <div class="mypage-logout">
+                MyPage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LogOut
+                </div>
+            </div>
+            <div class="overlap-2">
+                <div class="overlap-3">
+                <div class="text-wrapper-2">2025.03.11</div>
+                <div class="text-wrapper-3">날짜</div>
+                <div class="text-wrapper-4">Night</div>
+                <img class="img" src="img/image 29.png" />
+                <img class="image-2" src="img/image 19.png" />
+                <img class="line" src="img/line 19.svg" />
+                <img class="line-2" src="img/line 20.svg" />
+                <div class="text-wrapper-5">시간</div>
+                <div class="text-wrapper-6">날씨</div>
+                <div class="text-wrapper-7">기분</div>
+                <div class="text-wrapper-8">제목</div>
+                </div>
+                <div class="text-wrapper-9">내용</div>
+            </div>
+            <div class="div-wrapper"><div class="text-wrapper-10">작성</div></div>
+            <div class="overlap-4"><div class="text-wrapper-10">삭제</div></div>
+            </div>
+        </div>
+  <script>
+      fetch('header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+  </script>
+    </body>
+</html>

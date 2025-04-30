@@ -1,0 +1,2573 @@
+
+.main-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .main-page .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .main-page .overlap {
+    position: absolute;
+    width: 1440px;
+    height: 132px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #797979a6;
+  }
+
+  .main-page .overlap-group {
+    position: absolute;
+    width: 147px;
+    height: 83px;
+    top: 26px;
+    left: 645px;
+  }
+  
+  .main-page .text-wrapper {
+    position: absolute;
+    width: 121px;
+    top: 20px;
+    left: 0;
+    font-family: "Playfair Display-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .main-page .image {
+    width: 53px;
+    height: 53px;
+    top: 0;
+    left: 94px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .join-login {
+    position: absolute;
+    width: 303px;
+    top: 69px;
+    left: 1135px;
+    font-family: "Playfair-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .join-login a:hover {
+    color: #007BFF; /* 마우스 오버시 색 변경 */
+  }
+  
+  .main-page .div-wrapper {
+    position: absolute;
+    width: 170px;
+    height: 60px;
+    top: 255px;
+    left: 206px;
+    background-image: url(./img/rectangle-2.png);
+    background-size: 100% 100%;
+  }
+  
+  .main-page .text-wrapper-2 {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    top: 9px;
+    left: 10px;
+    font-family: "Noto Sans-DisplayThin", Helvetica;
+    font-weight: 100;
+    color: #000000ad;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .main-page .overlap-2 {
+    position: absolute;
+    width: 170px;
+    height: 60px;
+    top: 255px;
+    left: 1076px;
+    background-image: url(./img/rectangle-3.png);
+    background-size: 100% 100%;
+  }
+  
+  .main-page .overlap-3 {
+    position: absolute;
+    width: 170px;
+    height: 60px;
+    top: 255px;
+    left: 632px;
+    background-image: url(./img/rectangle-4.png);
+    background-size: 100% 100%;
+  }
+  
+  .main-page .text-wrapper-3 {
+    width: 150px;
+    height: 40px;
+    top: 9px;
+    left: 9px;
+    font-family: "Noto Sans-DisplayThin", Helvetica;
+    font-weight: 100;
+    color: #000000ad;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .main-page .overlap-group-2 {
+    position: absolute;
+    width: 1152px;
+    height: 611px;
+    top: 370px;
+    left: 156px;
+  }
+  
+  .main-page .img {
+    width: 1152px;
+    height: 577px;
+    top: 34px;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .image-2 {
+    width: 32px;
+    height: 32px;
+    top: 0;
+    left: 1118px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .image-3 {
+    width: 57px;
+    height: 57px;
+    top: 197px;
+    left: 859px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .image-4 {
+    width: 57px;
+    height: 57px;
+    top: 94px;
+    left: 1024px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .image-5 {
+    width: 57px;
+    height: 57px;
+    top: 197px;
+    left: 387px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .image-6 {
+    width: 58px;
+    height: 57px;
+    top: 295px;
+    left: 547px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .image-7 {
+    width: 57px;
+    height: 57px;
+    top: 295px;
+    left: 71px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .image-8 {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    top: 408px;
+    left: 218px;
+    object-fit: cover;
+  }
+  
+  .main-page .image-9 {
+    width: 57px;
+    height: 57px;
+    top: 408px;
+    left: 867px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .image-10 {
+    width: 57px;
+    height: 57px;
+    top: 409px;
+    left: 708px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .image-11 {
+    width: 57px;
+    height: 57px;
+    top: 197px;
+    left: 700px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .image-12 {
+    width: 31px;
+    height: 30px;
+    top: 4px;
+    left: 660px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .element {
+    width: 147px;
+    top: 11px;
+    left: 25px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 21px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .main-page .span {
+    color: #00000099;
+  }
+  
+  .main-page .text-wrapper-4 {
+    color: #000000;
+  }
+  
+  .main-page .text-wrapper-5 {
+    color: #eb7b798f;
+  }
+  
+  .main-page .p {
+    width: 214px;
+    top: 5px;
+    left: 461px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 21px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .main-page .text-wrapper-6 {
+    color: #de72c79e;
+  }
+  
+  .main-page .love-yourself {
+    position: absolute;
+    width: 323px;
+    top: 5px;
+    left: 810px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .main-page .text-wrapper-7 {
+    color: #9d6ac49e;
+  }
+  
+  .main-page .image-13 {
+    width: 32px;
+    height: 33px;
+    top: 11px;
+    left: 171px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .main-page .text-wrapper-8 {
+    width: 985px;
+    height: 92px;
+    top: 144px;
+    left: 221px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #00000075;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+   .overlap {
+    position: absolute;
+    width: 2000px;
+    height: 132px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #797979a6;
+  }
+
+  .overlap-group {
+    position: absolute;
+    width: 1440px;
+    height: 2000px;
+    top: 26px;
+    left: 645px;
+  }
+
+      .join-login {
+    width: 303px;
+    top: 69px;
+    left: 1135px;
+    font-family: "Playfair-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .text-wrapper {
+    position: absolute;
+    width: 121px;
+    top: 20px;
+    left: 0;
+    font-family: "Playfair Display-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .image {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    top: 0;
+    left: 94px;
+    object-fit: cover;
+  }
+
+  .my-diary-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .my-diary-page .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .my-diary-page .overlap {
+    position: absolute;
+    width: 1440px;
+    height: 132px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #797979a6;
+  }
+  
+  .my-diary-page .overlap-group {
+    position: absolute;
+    width: 147px;
+    height: 83px;
+    top: 26px;
+    left: 645px;
+  }
+  
+  .my-diary-page .text-wrapper {
+    position: absolute;
+    width: 121px;
+    top: 20px;
+    left: 0;
+    font-family: "Playfair Display-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .image {
+    width: 53px;
+    height: 53px;
+    top: 0;
+    left: 94px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .mypage-logout {
+    position: absolute;
+    width: 303px;
+    top: 69px;
+    left: 1121px;
+    font-family: "Playfair-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .overlap-group-2 {
+    position: absolute;
+    width: 1374px;
+    height: 695px;
+    top: 231px;
+    left: 100px;
+  }
+  
+  .my-diary-page .rectangle {
+    position: absolute;
+    width: 1270px;
+    height: 682px;
+    top: 0;
+    left: 0;
+  }
+  
+  .my-diary-page .text-wrapper-2 {
+    position: absolute;
+    width: 219px;
+    top: 14px;
+    left: 86px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #00000045;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .img {
+    width: 52px;
+    height: 52px;
+    top: 260px;
+    left: 788px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-2 {
+    width: 52px;
+    height: 52px;
+    top: 134px;
+    left: 789px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-3 {
+    width: 52px;
+    height: 52px;
+    top: 323px;
+    left: 789px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-4 {
+    width: 52px;
+    height: 52px;
+    top: 512px;
+    left: 789px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-5 {
+    width: 52px;
+    height: 52px;
+    top: 7px;
+    left: 788px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-6 {
+    width: 52px;
+    height: 52px;
+    top: 627px;
+    left: 788px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-7 {
+    width: 52px;
+    height: 52px;
+    top: 570px;
+    left: 788px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-8 {
+    width: 52px;
+    height: 52px;
+    top: 199px;
+    left: 788px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .line {
+    position: absolute;
+    width: 1268px;
+    height: 4px;
+    top: 62px;
+    left: 1px;
+  }
+  
+  .my-diary-page .line-2 {
+    position: absolute;
+    width: 1268px;
+    height: 4px;
+    top: 379px;
+    left: 1px;
+  }
+  
+  .my-diary-page .line-3 {
+    position: absolute;
+    width: 1268px;
+    height: 4px;
+    top: 622px;
+    left: 2px;
+  }
+  
+  .my-diary-page .line-4 {
+    position: absolute;
+    width: 1268px;
+    height: 4px;
+    top: 562px;
+    left: 1px;
+  }
+  
+  .my-diary-page .line-5 {
+    position: absolute;
+    width: 1268px;
+    height: 4px;
+    top: 506px;
+    left: 1px;
+  }
+  
+  .my-diary-page .line-6 {
+    position: absolute;
+    width: 1268px;
+    height: 4px;
+    top: 442px;
+    left: 1px;
+  }
+  
+  .my-diary-page .line-7 {
+    position: absolute;
+    width: 1268px;
+    height: 4px;
+    top: 316px;
+    left: 1px;
+  }
+  
+  .my-diary-page .image-9 {
+    width: 52px;
+    height: 52px;
+    top: 450px;
+    left: 788px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-10 {
+    width: 52px;
+    height: 52px;
+    top: 387px;
+    left: 787px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .line-8 {
+    position: absolute;
+    width: 1268px;
+    height: 5px;
+    top: 251px;
+    left: 1px;
+  }
+  
+  .my-diary-page .line-9 {
+    position: absolute;
+    width: 1268px;
+    height: 4px;
+    top: 189px;
+    left: 1px;
+  }
+  
+  .my-diary-page .line-10 {
+    position: absolute;
+    width: 1268px;
+    height: 5px;
+    top: 126px;
+    left: 1px;
+  }
+  
+  .my-diary-page .line-11 {
+    position: absolute;
+    width: 1px;
+    height: 679px;
+    top: 3px;
+    left: 77px;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .line-12 {
+    position: absolute;
+    width: 2px;
+    height: 680px;
+    top: 1px;
+    left: 925px;
+  }
+  
+  .my-diary-page .line-13 {
+    position: absolute;
+    width: 2px;
+    height: 682px;
+    top: 1px;
+    left: 774px;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .line-14 {
+    position: absolute;
+    width: 2px;
+    height: 680px;
+    top: 1px;
+    left: 853px;
+  }
+  
+  .my-diary-page .image-11 {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 69px;
+    left: 789px;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .text-wrapper-3 {
+    position: absolute;
+    width: 58px;
+    top: 9px;
+    left: 32px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-4 {
+    width: 58px;
+    top: 632px;
+    left: 27px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-5 {
+    width: 58px;
+    top: 573px;
+    left: 21px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-6 {
+    width: 58px;
+    top: 511px;
+    left: 29px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-7 {
+    width: 58px;
+    top: 453px;
+    left: 26px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-8 {
+    width: 58px;
+    top: 389px;
+    left: 32px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-9 {
+    width: 58px;
+    top: 324px;
+    left: 29px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-10 {
+    width: 58px;
+    top: 261px;
+    left: 29px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-11 {
+    width: 58px;
+    top: 198px;
+    left: 29px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-12 {
+    width: 58px;
+    top: 134px;
+    left: 28px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-13 {
+    width: 58px;
+    top: 70px;
+    left: 29px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 32px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .line-15 {
+    position: absolute;
+    width: 6px;
+    height: 680px;
+    top: 1px;
+    left: 1058px;
+  }
+  
+  .my-diary-page .text-wrapper-14 {
+    position: absolute;
+    width: 268px;
+    top: 16px;
+    left: 1106px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-15 {
+    width: 268px;
+    top: 634px;
+    left: 1105px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-16 {
+    width: 268px;
+    top: 577px;
+    left: 1105px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-17 {
+    width: 268px;
+    top: 519px;
+    left: 1106px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-18 {
+    width: 268px;
+    top: 459px;
+    left: 1106px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-19 {
+    width: 268px;
+    top: 397px;
+    left: 1106px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-20 {
+    width: 268px;
+    top: 334px;
+    left: 1106px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-21 {
+    width: 268px;
+    top: 270px;
+    left: 1106px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-22 {
+    width: 142px;
+    top: 207px;
+    left: 1106px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-23 {
+    width: 268px;
+    top: 145px;
+    left: 1106px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-24 {
+    width: 268px;
+    top: 81px;
+    left: 1106px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .image-12 {
+    width: 52px;
+    height: 52px;
+    top: 390px;
+    left: 863px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-13 {
+    width: 52px;
+    height: 52px;
+    top: 627px;
+    left: 863px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-14 {
+    width: 52px;
+    height: 52px;
+    top: 450px;
+    left: 863px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-15 {
+    width: 52px;
+    height: 52px;
+    top: 570px;
+    left: 864px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-16 {
+    width: 52px;
+    height: 52px;
+    top: 198px;
+    left: 863px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .text-wrapper-25 {
+    position: absolute;
+    width: 116px;
+    top: 11px;
+    left: 940px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-26 {
+    position: absolute;
+    width: 116px;
+    top: 76px;
+    left: 958px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-27 {
+    top: 572px;
+    position: absolute;
+    width: 116px;
+    left: 962px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-28 {
+    position: absolute;
+    width: 116px;
+    top: 628px;
+    left: 946px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-29 {
+    position: absolute;
+    width: 116px;
+    top: 455px;
+    left: 950px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-30 {
+    top: 516px;
+    position: absolute;
+    width: 116px;
+    left: 962px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-31 {
+    top: 390px;
+    position: absolute;
+    width: 116px;
+    left: 962px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-32 {
+    top: 329px;
+    position: absolute;
+    width: 116px;
+    left: 962px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-33 {
+    position: absolute;
+    width: 130px;
+    top: 266px;
+    left: 935px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-34 {
+    position: absolute;
+    width: 130px;
+    top: 142px;
+    left: 935px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-35 {
+    position: absolute;
+    width: 116px;
+    top: 202px;
+    left: 940px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .image-17 {
+    width: 52px;
+    height: 52px;
+    top: 5px;
+    left: 866px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-18 {
+    width: 52px;
+    height: 52px;
+    top: 66px;
+    left: 866px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-19 {
+    width: 52px;
+    height: 52px;
+    top: 507px;
+    left: 866px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-20 {
+    width: 52px;
+    height: 52px;
+    top: 318px;
+    left: 866px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-21 {
+    width: 52px;
+    height: 52px;
+    top: 127px;
+    left: 866px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-22 {
+    width: 52px;
+    height: 52px;
+    top: 256px;
+    left: 866px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .image-23 {
+    width: 52px;
+    height: 52px;
+    top: -183px;
+    left: 1024px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .my-diary-page .overlap-2 {
+    position: absolute;
+    width: 103px;
+    height: 22px;
+    top: 975px;
+    left: 695px;
+  }
+  
+  .my-diary-page .text-wrapper-36 {
+    width: 37px;
+    top: 0;
+    left: 0;
+    font-family: "Petrona-Light", Helvetica;
+    font-weight: 300;
+    color: #00000063;
+    font-size: 28px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-37 {
+    width: 37px;
+    top: 0;
+    left: 66px;
+    font-family: "Petrona-Light", Helvetica;
+    font-weight: 300;
+    color: #00000063;
+    font-size: 28px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-38 {
+    width: 37px;
+    top: 0;
+    left: 32px;
+    font-family: "Petrona-Light", Helvetica;
+    font-weight: 300;
+    color: #00000063;
+    font-size: 28px;
+    white-space: nowrap;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .text-wrapper-39 {
+    position: absolute;
+    width: 141px;
+    top: 187px;
+    left: 133px;
+    font-family: "Pathway Extreme-Light", Helvetica;
+    font-weight: 300;
+    color: #0000008a;
+    font-size: 29px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-diary-page .image-24 {
+    width: 27px;
+    height: 27px;
+    top: 194px;
+    left: 100px;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  .diary-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .diary-page .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .diary-page .overlap-group {
+    position: absolute;
+    width: 1440px;
+    height: 132px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #797979a6;
+  }
+  
+  .diary-page .overlap {
+    position: absolute;
+    width: 147px;
+    height: 83px;
+    top: 26px;
+    left: 645px;
+  }
+  
+  .diary-page .text-wrapper {
+    position: absolute;
+    width: 121px;
+    top: 20px;
+    left: 0;
+    font-family: "Playfair Display-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .diary-page .image {
+    width: 53px;
+    height: 53px;
+    top: 0;
+    left: 94px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .diary-page .mypage-logout {
+    position: absolute;
+    width: 303px;
+    top: 69px;
+    left: 1121px;
+    font-family: "Playfair-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .diary-page .overlap-2 {
+    position: absolute;
+    width: 1210px;
+    height: 737px;
+    top: 205px;
+    left: 116px;
+    background-color: #ddb6b60a;
+    border: 1px solid;
+    border-color: #00000021;
+  }
+  
+  .diary-page .overlap-3 {
+    position: absolute;
+    width: 770px;
+    height: 115px;
+    top: 11px;
+    left: 18px;
+  }
+  
+  .diary-page .text-wrapper-2 {
+    position: absolute;
+    width: 268px;
+    top: 54px;
+    left: 496px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #0000008c;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .diary-page .text-wrapper-3 {
+    width: 336px;
+    top: 54px;
+    left: 434px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #0000004f;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .diary-page .text-wrapper-4 {
+    position: absolute;
+    width: 116px;
+    top: 53px;
+    left: 301px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #0000008c;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .diary-page .img {
+    width: 36px;
+    height: 36px;
+    top: 56px;
+    left: 173px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .diary-page .image-2 {
+    width: 35px;
+    height: 35px;
+    top: 56px;
+    left: 55px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .diary-page .line {
+    width: 117px;
+    top: 45px;
+    left: 104px;
+    position: absolute;
+    height: 54px;
+  }
+  
+  .diary-page .line-2 {
+    width: 1px;
+    top: 44px;
+    left: 420px;
+    object-fit: cover;
+    position: absolute;
+    height: 54px;
+  }
+  
+  .diary-page .text-wrapper-5 {
+    width: 336px;
+    top: 55px;
+    left: 231px;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #0000004f;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .diary-page .text-wrapper-6 {
+    position: absolute;
+    width: 335px;
+    top: 55px;
+    left: 123px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #0000004f;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .diary-page .text-wrapper-7 {
+    top: 55px;
+    left: 0;
+    position: absolute;
+    width: 335px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #0000004f;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .diary-page .text-wrapper-8 {
+    width: 335px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #0000004f;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .diary-page .text-wrapper-9 {
+    top: 122px;
+    left: 17px;
+    position: absolute;
+    width: 335px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #0000004f;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .diary-page .div-wrapper {
+    position: absolute;
+    width: 112px;
+    height: 60px;
+    top: 955px;
+    left: 1097px;
+    background-image: url(./img/rectangle-14.png);
+    background-size: 100% 100%;
+  }
+  
+  .diary-page .text-wrapper-10 {
+    position: absolute;
+    width: 82px;
+    top: 5px;
+    left: 27px;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    color: #fffafa;
+    font-size: 29px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .diary-page .overlap-4 {
+    position: absolute;
+    width: 112px;
+    height: 60px;
+    top: 955px;
+    left: 1217px;
+    background-image: url(./img/rectangle-21.png);
+    background-size: 100% 100%;
+  }
+  .saved-songs-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .saved-songs-page .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .saved-songs-page .overlap-group {
+    position: absolute;
+    width: 1440px;
+    height: 132px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #797979a6;
+  }
+  
+  .saved-songs-page .overlap {
+    position: absolute;
+    width: 147px;
+    height: 83px;
+    top: 26px;
+    left: 645px;
+  }
+  
+  .saved-songs-page .text-wrapper {
+    position: absolute;
+    width: 121px;
+    top: 20px;
+    left: 0;
+    font-family: "Playfair Display-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .saved-songs-page .image {
+    width: 53px;
+    height: 53px;
+    top: 0;
+    left: 94px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .saved-songs-page .mypage-logout {
+    position: absolute;
+    width: 303px;
+    top: 69px;
+    left: 1121px;
+    font-family: "Playfair-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .saved-songs-page .text-wrapper-2 {
+    position: absolute;
+    width: 219px;
+    top: 241px;
+    left: 179px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #00000070;
+    font-size: 34px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .saved-songs-page .text-wrapper-3 {
+    position: absolute;
+    width: 219px;
+    top: 241px;
+    left: 861px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #00000070;
+    font-size: 31px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .saved-songs-page .text-wrapper-4 {
+    position: absolute;
+    width: 141px;
+    top: 191px;
+    left: 117px;
+    font-family: "Pathway Extreme-Light", Helvetica;
+    font-weight: 300;
+    color: #0000008a;
+    font-size: 29px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .saved-songs-page .img {
+    width: 32px;
+    height: 32px;
+    top: 197px;
+    left: 84px;
+    position: absolute;
+    object-fit: cover;
+  }
+  .my-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .my-page .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .my-page .overlap {
+    position: absolute;
+    width: 1440px;
+    height: 132px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #797979a6;
+  }
+  
+  .my-page .overlap-group {
+    position: absolute;
+    width: 147px;
+    height: 83px;
+    top: 26px;
+    left: 645px;
+  }
+  
+  .my-page .text-wrapper {
+    position: absolute;
+    width: 121px;
+    top: 20px;
+    left: 0;
+    font-family: "Playfair Display-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-page .image {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    top: 0;
+    left: 94px;
+    object-fit: cover;
+  }
+  
+  .my-page .mypage-logout {
+    position: absolute;
+    width: 303px;
+    top: 69px;
+    left: 1121px;
+    font-family: "Playfair-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-page .overlap-group-2 {
+    position: absolute;
+    width: 500px;
+    height: 585px;
+    top: 290px;
+    left: 456px;
+    background-color: #fbf6f6;
+  }
+  
+  .my-page .edit-wrapper {
+    position: absolute;
+    width: 104px;
+    height: 60px;
+    top: 485px;
+    left: 118px;
+    background-image: url(./img/rectangle-14.png);
+    background-size: 100% 100%;
+  }
+  
+  .my-page .edit {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    left: 34px;
+  }
+  
+  .my-page .overlap-2 {
+    position: absolute;
+    width: 108px;
+    height: 60px;
+    top: 485px;
+    left: 275px;
+  }
+  
+  .my-page .rectangle {
+    position: absolute;
+    width: 104px;
+    height: 60px;
+    top: 0;
+    left: 0;
+  }
+  
+  .my-page .text-wrapper-2 {
+    width: 81px;
+    top: 7px;
+    left: 27px;
+    color: #fffafa;
+    font-size: 27px;
+    position: absolute;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-page .div-wrapper {
+    position: absolute;
+    width: 390px;
+    height: 63px;
+    top: 124px;
+    left: 44px;
+    background-image: url(./img/rectangle-19.png);
+    background-size: 100% 100%;
+  }
+  
+  .my-page .text-wrapper-3 {
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    font-family: "Playfair Display-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #00000033;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-page .overlap-3 {
+    position: absolute;
+    width: 390px;
+    height: 63px;
+    top: 216px;
+    left: 44px;
+    background-image: url(./img/rectangle-20.png);
+    background-size: 100% 100%;
+  }
+  
+  .my-page .text-wrapper-4 {
+    position: absolute;
+    top: 9px;
+    left: 24px;
+    font-family: "Playfair Display-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #00000033;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-page .overlap-4 {
+    position: absolute;
+    width: 390px;
+    height: 63px;
+    top: 307px;
+    left: 44px;
+    background-image: url(./img/rectangle-23.png);
+    background-size: 100% 100%;
+  }
+  
+  .my-page .overlap-5 {
+    position: absolute;
+    width: 390px;
+    height: 63px;
+    top: 391px;
+    left: 44px;
+    background-image: url(./img/rectangle-24.png);
+    background-size: 100% 100%;
+  }
+  
+  .my-page .text-wrapper-5 {
+    position: absolute;
+    top: 8px;
+    left: 24px;
+    font-family: "Playfair Display-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #00000033;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-page .text-wrapper-6 {
+    width: 338px;
+    top: 547px;
+    left: 136px;
+    color: #00000040;
+    font-size: 16px;
+    position: absolute;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .my-page .text-wrapper-7 {
+    position: absolute;
+    width: 141px;
+    top: 245px;
+    left: 456px;
+    font-family: "Pathway Extreme-Light", Helvetica;
+    font-weight: 300;
+    color: #0000008a;
+    font-size: 29px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .recommended-songs {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .recommended-songs .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .recommended-songs .overlap {
+    position: absolute;
+    width: 1440px;
+    height: 132px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #797979a6;
+  }
+  
+  .recommended-songs .overlap-group {
+    position: absolute;
+    width: 147px;
+    height: 83px;
+    top: 26px;
+    left: 645px;
+  }
+  
+  .recommended-songs .text-wrapper {
+    position: absolute;
+    width: 121px;
+    top: 20px;
+    left: 0;
+    font-family: "Playfair Display-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .image {
+    width: 53px;
+    height: 53px;
+    top: 0;
+    left: 94px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .recommended-songs .mypage-logout {
+    position: absolute;
+    width: 303px;
+    top: 69px;
+    left: 1121px;
+    font-family: "Playfair-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .overlap-2 {
+    position: absolute;
+    width: 895px;
+    height: 53px;
+    top: 196px;
+    left: 319px;
+  }
+  
+  .recommended-songs .text-wrapper-2 {
+    width: 314px;
+    top: 4px;
+    left: 0;
+    color: #00000085;
+    font-size: 27px;
+    position: absolute;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-3 {
+    width: 314px;
+    top: 4px;
+    left: 301px;
+    color: #00000085;
+    font-size: 27px;
+    position: absolute;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-4 {
+    position: absolute;
+    width: 314px;
+    top: 4px;
+    left: 581px;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    color: #00000085;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .img {
+    width: 42px;
+    height: 42px;
+    top: 3px;
+    left: 201px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .recommended-songs .image-2 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 499px;
+    object-fit: cover;
+  }
+  
+  .recommended-songs .image-3 {
+    width: 54px;
+    height: 88px;
+    top: 261px;
+    left: 685px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .recommended-songs .overlap-group-2 {
+    position: absolute;
+    width: 951px;
+    height: 415px;
+    top: 467px;
+    left: 282px;
+    background-color: #ddb4eb0f;
+    border: 1px solid;
+    border-color: #00000014;
+  }
+  
+  .recommended-songs .overlap-3 {
+    position: absolute;
+    width: 950px;
+    height: 413px;
+    top: 1px;
+    left: 0;
+  }
+  
+  .recommended-songs .line {
+    position: absolute;
+    width: 1px;
+    height: 413px;
+    top: 0;
+    left: 57px;
+  }
+  
+  .recommended-songs .text-wrapper-5 {
+    position: absolute;
+    width: 58px;
+    top: 2px;
+    left: 24px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-6 {
+    top: 374px;
+    left: 17px;
+    position: absolute;
+    width: 58px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-7 {
+    top: 332px;
+    left: 19px;
+    position: absolute;
+    width: 58px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-8 {
+    top: 291px;
+    left: 19px;
+    position: absolute;
+    width: 58px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-9 {
+    top: 251px;
+    left: 22px;
+    position: absolute;
+    width: 58px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-10 {
+    top: 208px;
+    left: 20px;
+    position: absolute;
+    width: 58px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-11 {
+    top: 167px;
+    left: 20px;
+    position: absolute;
+    width: 58px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-12 {
+    top: 125px;
+    left: 21px;
+    position: absolute;
+    width: 58px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-13 {
+    top: 86px;
+    left: 20px;
+    position: absolute;
+    width: 58px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-14 {
+    top: 45px;
+    left: 22px;
+    position: absolute;
+    width: 58px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .line-2 {
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    top: 42px;
+    left: 0;
+  }
+  
+  .recommended-songs .line-3 {
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    top: 83px;
+    left: 0;
+  }
+  
+  .recommended-songs .play-circle {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 4px;
+    left: 850px;
+  }
+  
+  .recommended-songs .play-circle-2 {
+    top: 45px;
+    left: 850px;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+  }
+  
+  .recommended-songs .line-4 {
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    top: 123px;
+    left: 0;
+  }
+  
+  .recommended-songs .line-5 {
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    top: 164px;
+    left: 0;
+  }
+  
+  .recommended-songs .line-6 {
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    top: 206px;
+    left: 0;
+  }
+  
+  .recommended-songs .line-7 {
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    top: 248px;
+    left: 0;
+  }
+  
+  .recommended-songs .line-8 {
+    position: absolute;
+    width: 950px;
+    height: 1px;
+    top: 289px;
+    left: 0;
+  }
+  
+  .recommended-songs .line-9 {
+    position: absolute;
+    width: 949px;
+    height: 1px;
+    top: 331px;
+    left: 1px;
+  }
+  
+  .recommended-songs .line-10 {
+    position: absolute;
+    width: 949px;
+    height: 1px;
+    top: 373px;
+    left: 1px;
+  }
+  
+  .recommended-songs .line-11 {
+    position: absolute;
+    width: 1px;
+    height: 413px;
+    top: 0;
+    left: 896px;
+  }
+  
+  .recommended-songs .line-12 {
+    position: absolute;
+    width: 1px;
+    height: 413px;
+    top: 0;
+    left: 840px;
+  }
+  
+  .recommended-songs .line-13 {
+    position: absolute;
+    width: 1px;
+    height: 413px;
+    top: 0;
+    left: 667px;
+  }
+  
+  .recommended-songs .text-wrapper-15 {
+    position: absolute;
+    width: 219px;
+    top: 4px;
+    left: 69px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #00000045;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-16 {
+    position: absolute;
+    width: 219px;
+    top: 7px;
+    left: 681px;
+    font-family: "Pathway Extreme-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #00000045;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .play-circle-3 {
+    top: 85px;
+    left: 849px;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+  }
+  
+  .recommended-songs .play-circle-4 {
+    top: 126px;
+    left: 849px;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+  }
+  
+  .recommended-songs .play-circle-5 {
+    top: 168px;
+    left: 849px;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+  }
+  
+  .recommended-songs .play-circle-6 {
+    top: 210px;
+    left: 849px;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+  }
+  
+  .recommended-songs .play-circle-7 {
+    top: 251px;
+    left: 849px;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+  }
+  
+  .recommended-songs .play-circle-8 {
+    top: 293px;
+    left: 849px;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+  }
+  
+  .recommended-songs .play-circle-9 {
+    top: 335px;
+    left: 849px;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+  }
+  
+  .recommended-songs .play-circle-10 {
+    top: 375px;
+    left: 849px;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+  }
+  
+  .recommended-songs .p {
+    width: 742px;
+    top: 370px;
+    left: 435px;
+    color: #6d698b85;
+    font-size: 27px;
+    position: absolute;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-17 {
+    width: 338px;
+    top: 968px;
+    left: 606px;
+    color: #00000040;
+    font-size: 16px;
+    position: absolute;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .recommended-songs .text-wrapper-18 {
+    width: 255px;
+    top: 433px;
+    left: 286px;
+    color: #0000006b;
+    font-size: 20px;
+    position: absolute;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .select-song-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .select-song-page .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .select-song-page .overlap {
+    position: absolute;
+    width: 755px;
+    height: 459px;
+    top: 166px;
+    left: 410px;
+  }
+  
+  .select-song-page .image {
+    width: 459px;
+    height: 459px;
+    left: 296px;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+  }
+  
+  .select-song-page .text-wrapper {
+    position: absolute;
+    width: 338px;
+    height: 77px;
+    top: 68px;
+    left: 141px;
+    font-family: "Noto Sans-DisplayThin", Helvetica;
+    font-weight: 100;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .select-song-page .singer-tittle {
+    position: absolute;
+    width: 619px;
+    height: 114px;
+    top: 192px;
+    left: 0;
+    font-family: "Noto Sans-DisplayThin", Helvetica;
+    font-weight: 100;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .select-song-page .overlap-group {
+    position: absolute;
+    width: 1440px;
+    height: 132px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #797979a6;
+  }
+  
+  .select-song-page .overlap-2 {
+    position: absolute;
+    width: 147px;
+    height: 83px;
+    top: 26px;
+    left: 645px;
+  }
+  
+  .select-song-page .text-wrapper-2 {
+    position: absolute;
+    width: 121px;
+    top: 20px;
+    left: 0;
+    font-family: "Playfair Display-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .select-song-page .img {
+    width: 53px;
+    height: 53px;
+    left: 94px;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+  }
+  
+  .select-song-page .mypage-logout {
+    position: absolute;
+    width: 303px;
+    top: 69px;
+    left: 1121px;
+    font-family: "Playfair-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  

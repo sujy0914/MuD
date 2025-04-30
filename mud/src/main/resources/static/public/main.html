@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mud</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-page">
+      <div class="div">
+        <div id="header"></div>
+        <div class="div-wrapper"><div class="text-wrapper-2">내가 쓴 일기</div></div>
+        <div class="overlap-2"><div class="text-wrapper-2">저장한 노래 목록</div></div>
+        <div class="overlap-3"><div class="text-wrapper-3">일기 쓰기</div></div>
+        <div class="overlap-group-2">
+          <img class="img" src="img/image 1.png" />
+          <img class="image-2" src="img/image 12.png" />
+          <img class="image-3" src="img/image 3.png" />
+          <img class="image-4" src="img/image 8.png" />
+          <img class="image-5" src="img/image 4.png" />
+          <img class="image-6" src="img/image 5.png" />
+          <img class="image-7" src="img/image 6.png" />
+          <img class="image-8" src="img/image.png" />
+          <img class="image-9" src="img/image 7.png" />
+          <img class="image-10" src="img/image 10.png" />
+          <img class="image-11" src="img/image 9.png" />
+          <img class="image-12" src="img/image 11.png" />
+          <p class="element">
+            <span class="span">작성한 일기:</span>
+            <span class="text-wrapper-4">&nbsp;</span>
+            <span class="text-wrapper-5">9개</span>
+          </p>
+          <p class="p">
+            <span class="span">많이 기록한 감정:</span>
+            <span class="text-wrapper-4">&nbsp;</span>
+            <span class="text-wrapper-6">기쁨</span>
+          </p>
+          <p class="love-yourself">
+            <span class="span">가장 많이 들은 노래:</span>
+            <span class="text-wrapper-4">&nbsp;</span>
+            <span class="text-wrapper-7">Love Yourself</span>
+          </p>
+          <img class="image-13" src="img/image 13.png" />
+        </div>
+        <p class="text-wrapper-8">
+          일기 한 줄 쓰면?<br />
+          🎵 오늘의 기분, 날씨, 시간에 딱 맞는 노래가 짠!
+        </p>
+      </div>
+    </div>
+  <script>
+    fetch('header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+  </script>
+  </body>
+</html>
