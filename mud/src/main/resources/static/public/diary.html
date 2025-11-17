@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mud</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .diary-page {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            align-items: stretch;
+            box-sizing: border-box;
+            padding: 20px;
+          }
+
+          .diary-page .div {
+            background-color: #ffffff;
+            width: 1440px;
+            height: 1024px;
+            position: relative;
+          }
+
+            .diary-page .overlap-2 {
+              position: absolute;
+              width: 1300px;
+              height: 800px;
+              top: 205px;
+              left: 60px;
+              background-color: #ddb6b60a;
+              border: 1px solid;
+              border-color: #00000021;
+            }
+
+            .diary-page .overlap-3 {
+              position: absolute;
+              width: 770px;
+              height: 115px;
+              top: 11px;
+              left: 18px;
+            }
+
+            .diary-page .text-wrapper-2 {
+              position: absolute;
+              width: 268px;
+              top: 54px;
+              left: 496px;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000008c;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+            }
+
+             .diary-page .text-wrapper-day {
+              width: 200px;
+              height: 31px;
+              top: 58px;
+              left: 490px;
+              position: absolute;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000004f;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+            }
+
+            .diary-page .text-wrapper-3 {
+              width: 200px;
+              height: 31px;
+              top: 58px;
+              left: 550px;
+              position: absolute;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000004f;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+              cursor: pointer;
+            }
+
+            .diary-page .text-wrapper-4 {
+              position: absolute;
+              width: 116px;
+              top: 53px;
+              left: 301px;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000008c;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+            }
+
+            .diary-page .img {
+              width: 36px;
+              height: 36px;
+              top: 56px;
+              left: 173px;
+              position: absolute;
+              object-fit: cover;
+            }
+
+            .diary-page .image-2 {
+              width: 35px;
+              height: 35px;
+              top: 56px;
+              left: 55px;
+              position: absolute;
+              object-fit: cover;
+            }
+
+            .diary-page .line {
+              width: 117px;
+              top: 45px;
+              left: 104px;
+              position: absolute;
+              height: 54px;
+            }
+
+            .diary-page .line-2 {
+              width: 1px;
+              top: 44px;
+              left: 420px;
+              object-fit: cover;
+              position: absolute;
+              height: 54px;
+            }
+
+                .diary-page .text-time {
+              width: 50px;
+              top: 55px;
+              left: 310px;
+              position: absolute;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000004f;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+            }
+
+            .diary-page .text-wrapper-5 {
+              width: 120px;
+              top: 59px;
+              left: 370px;
+              position: absolute;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000004f;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+              cursor: pointer;
+            }
+
+            .diary-page .text-wrapper-6 {
+              position: absolute;
+              width: 335px;
+              top: 55px;
+              left: 160px;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000004f;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+              cursor: pointer;
+            }
+
+            .diary-page .text-wrapper-7 {
+              top: 55px;
+              left: 0;
+              position: absolute;
+              width: 335px;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000004f;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+            }
+
+            .diary-page .text-wrapper-8 {
+              width: 335px;
+              top: 0;
+              left: 0;
+              position: absolute;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000004f;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+              border: none;
+              outline: none;
+            }
+
+            .diary-page .text-wrapper-9 {
+              top: 122px;
+              left: 17px;
+              position: absolute;
+              width: 335px;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000004f;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+            }
+
+            .diary-page .div-wrapper {
+              position: absolute;
+              width: 112px;
+              height: 60px;
+              top: 1020px;
+              left: 1130px;
+              background-image: url(./img/rectangle-14.png);
+              background-size: 100% 100%;
+              cursor: pointer;
+
+            }
+
+            .diary-page .text-wrapper-10 {
+              position: absolute;
+              width: 82px;
+              top: 5px;
+              left: 27px;
+              font-family: "Playfair Display-Regular", Helvetica;
+              font-weight: 400;
+              color: #fffafa;
+              font-size: 29px;
+              letter-spacing: 0;
+              line-height: normal;
+            }
+
+            .diary-page .overlap-4 {
+              position: absolute;
+              width: 112px;
+              height: 60px;
+              top: 1020px;
+              left: 1253px;
+              background-image: url(./img/rectangle-21.png);
+              background-size: 100% 100%;
+            }
+
+              #nav-buttons {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+              }
+              #nav-buttons a {
+                margin-left: 15px;
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+              }
+
+             .diary-page .weather{
+              width: 73px;
+              top: 59px;
+              left: 45px;
+              position: absolute;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000004f;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+              cursor: pointer;
+            }
+
+            .diary-page .mood {
+              width: 73px;
+              top: 59px;
+              left: 170px;
+              position: absolute;
+              font-family: "Pathway Extreme-ExtraLight", Helvetica;
+              font-weight: 200;
+              color: #0000004f;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: normal;
+              cursor: pointer;
+            }
+            #nav-buttons {
+              position: absolute;
+              top: 60px;
+              right: 50px;
+              font-size: 30px;
+              z-index: 1000;
+            }
+            #nav-buttons a {
+              margin-left: 15px;
+              text-decoration: none;
+              color: #333;
+              font-weight: bold;
+            }
+
+            .clickable {
+              cursor: pointer;
+            }
+
+            .downscaled-wrapper {
+              position: relative;
+              display: inline-block;
+              transform: translateY(40px) scale(1.1);
+              transform-origin: top left;
+            }
+</style>
+</head>
+  <body>
+  <div class="diary-page">
+            <div class="div">
+            <div id="header"></div>
+            <div id="nav-buttons"></div>
+                <div class="downscaled-wrapper">
+                <div class="overlap-2">
+                <div class="overlap-3">
+                    <input class="text-wrapper-8" placeholder=" 제목" type="text" id="title"/>
+
+                    <div class="text-wrapper-7">날씨</div>
+                    <select class="weather" id="weather-options" onchange="selectWeather(this.value)" style="width: 115px;outline: none; border: none;">
+                        <option value="sunny" data-img="img/image 29.png">맑음☀️</option>
+                        <option value="rainy" data-img="img/image 23.png">비🌧️</option>
+                        <option value="cloudy" data-img="img/image 36.png">흐림☁️</option>
+                        <option value="snow" data-img="img/image 25.png">눈🌨️</option>
+                        <option value="thunder" data-img="img/image 26.png">천둥⛈️</option>
+                    </select>
+
+
+                    <div class="text-wrapper-6">기분</div>
+                    <select class="mood" id="mood-options" onchange="selectMood(this.value)" style="left: 205px; width: 110px;outline: none; border: none;">
+                        <option value="happy" data-img="img/image 19.png">기쁨😊</option>
+                        <option value="sad" data-img="img/image 5.png">슬픔😭</option>
+                        <option value="angry" data-img="img/image 20.png">화남😡</option>
+                        <option value="soso" data-img="img/image 21.png">보통😳</option>
+                        <option value="think" data-img="img/image 37.png">생각🧐</option>
+                    </select>
+
+                    <div class="text-time">시간</div>
+                    <select class="text-wrapper-5" id="time-of-day" style="outline: none; border: none;">
+                        <option value="night">Night</option>
+                        <option value="evening">Evening</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="morning">Morning</option>
+                    </select>
+                    <div class="text-wrapper-day">날짜</div>
+                    <input class="text-wrapper-3" type="date" id="date" style="outline: none; border: none;"/>
+                </div>
+                <textarea class="text-wrapper-9" id="content" placeholder="내용" style="outline: none; border: none; position: absolute; top: 124px; left: 21px; width: 96%; height: 660px; font-size: 20px;"></textarea>
+            </div>
+            <div class="div-wrapper"><div class="text-wrapper-10">작성</div></div>
+            <div class="overlap-4"><div class="text-wrapper-10">삭제</div></div>
+            </div>
+            </div>
+  </div>
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let loggedInUserId = null;
+        let selectedMood = "";
+        let selectedWeather = "";
+        let currentDiaryId = null;
+
+        const params = new URLSearchParams(window.location.search);
+        const date = params.get("date");
+
+        fetch('header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('header').innerHTML = data;
+          })
+          .then(() => {
+            checkLoginStatus();
+          });
+
+        function checkLoginStatus() {
+          fetch('http://localhost:8080/api/users/check-login', {
+            method: 'GET',
+            credentials: 'include'
+          })
+            .then(response => response.json())
+            .then(data => {
+              const navButtons = document.getElementById("nav-buttons");
+
+              if (!navButtons) {
+                console.error("nav-buttons 요소가 없습니다.");
+                return;
+              }
+
+              if (data.isLoggedIn) {
+                  loggedInUserId = data.userId;
+
+                  initDiaryEvents();
+
+                  loadDiaryData(loggedInUserId, date);
+
+                  navButtons.innerHTML = `
+                    <a href="mypage.html">MyPage</a>
+                    <a href="#" id="logoutBtn">Logout</a>
+                  `;
+
+                document.getElementById("logoutBtn").addEventListener("click", (event) => {
+                  event.preventDefault();
+                  fetch('http://localhost:8080/api/users/logout', {
+                    method: 'GET',
+                    credentials: 'include'
+                  })
+                    .then(response => {
+                      if (response.ok) {
+                        alert("로그아웃 되었습니다.");
+                        window.location.href = "main.html";
+                      } else {
+                        alert("로그아웃 실패");
+                      }
+                    });
+                });
+
+              } else {
+                alert("로그인 후 이용해주세요.");
+                window.location.href = "login.html";
+              }
+            })
+            .catch(() => {
+              alert("로그인 후 이용해주세요.");
+              window.location.href = "login.html";
+            });
+        }
+
+        async function loadDiaryData(userId, date) {
+          if (!date) {
+            console.warn("날짜 정보가 없습니다.");
+            setMode("new");
+            return;
+          }
+
+          try {
+            const res = await fetch(`http://localhost:8080/api/diary/${userId}/date?date=${date}`);
+            if (!res.ok) {
+              setMode("new");
+              return;
+            }
+
+            const diaryArray = await res.json();
+
+            if (diaryArray.length > 0) {
+              const diary = diaryArray[0];
+              currentDiaryId = diary.diaryId;
+              document.getElementById("date").value = diary.date || "";
+              document.getElementById("title").value = diary.tittle || diary.title || "";
+              document.getElementById("content").value = diary.content || "";
+              if (diary.weather) {
+                document.getElementById("weather-options").value = diary.weather;
+                selectWeather(diary.weather);
+              }
+              if (diary.mood) {
+                document.getElementById("mood-options").value = diary.mood;
+                selectMood(diary.mood);
+              }
+              if (diary.timeOfDay) {
+                document.getElementById("time-of-day").value = diary.timeOfDay;
+              }
+
+              selectedMood = diary.mood || "";
+              selectedWeather = diary.weather || "";
+
+              setMode("edit");
+            } else {
+              clearDiaryFields();
+              setMode("new");
+            }
+          } catch (e) {
+            console.error("일기 데이터 불러오기 실패:", e);
+            setMode("new");
+          }
+        }
+
+        function setMode(mode) {
+          const saveBtn = document.querySelector(".div-wrapper");
+          const saveText = saveBtn?.querySelector(".text-wrapper-10");
+          const deleteBtn = document.querySelector(".overlap-4");
+
+          if (saveBtn && saveText) {
+            saveBtn.style.cursor = "pointer";
+            saveBtn.onclick = saveDiary;
+            saveText.textContent = mode === "edit" ? "수정" : "작성"; // ✨ 버튼 텍스트 변경
+          }
+
+          if (deleteBtn) {
+            deleteBtn.style.cursor = "pointer";
+            deleteBtn.onclick = deleteDiary;
+          }
+        }
+
+        async function saveDiary() {
+          const content = document.getElementById("content");
+          const title = document.getElementById("title");
+          const date = document.getElementById("date");
+          const time = document.getElementById("time-of-day");
+          const weatherSelect = document.getElementById("weather-options");
+          const moodSelect = document.getElementById("mood-options");
+
+          // 필수 입력 체크 & 커서 이동
+          if (!title.value.trim()) {
+            alert("제목을 입력해주세요.");
+            title.focus();
+            return;
+          }
+          if (!weatherSelect.value) {
+            alert("날씨를 선택해주세요.");
+            weatherSelect.focus();
+            return;
+          }
+          if (!moodSelect.value) {
+            alert("기분을 선택해주세요.");
+            moodSelect.focus();
+            return;
+          }
+          if (!time.value) {
+            alert("시간대를 선택해주세요.");
+            time.focus();
+            return;
+          }
+          if (!date.value) {
+            alert("날짜를 선택해주세요.");
+            date.focus();
+            return;
+          }
+          if (!content.value.trim()) {
+            alert("내용을 입력해주세요.");
+            content.focus();
+            return;
+          }
+
+          const diaryData = {
+            userId: loggedInUserId,
+            content: content.value,
+            tittle: title.value,
+            mood: document.getElementById("mood-options").value,  
+            weather: document.getElementById("weather-options").value,
+            timeOfDay: time.value,
+            date: date.value
+          };
+
+          try {
+            let url = `http://localhost:8080/api/diary/write/${loggedInUserId}`;
+            let method = "POST";
+
+            if (currentDiaryId) {
+              url = `http://localhost:8080/api/diary/${currentDiaryId}`;
+              method = "PUT";
+            }
+
+            const response = await fetch(url, {
+              method: method,
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(diaryData)
+            });
+
+            if (response.ok) {
+              const result = await response.text();
+
+              const diaryId = result.diaryId || currentDiaryId;
+              alert(currentDiaryId ? "수정되었습니다!" : "저장되었습니다!");
+
+              window.location.href = `recommendedsongs.html?diaryId=${diaryId}&mood=${selectedMood}&weather=${selectedWeather}&time=${time.value}&date=${date.value}`;
+            } else {
+              alert("저장 실패");
+            }
+          } catch (e) {
+            alert("저장 중 오류가 발생했습니다.");
+            console.error(e);
+          }
+        }
+
+        async function deleteDiary() {
+          const date = document.getElementById("date").value;
+
+          if (!date) {
+            alert("날짜를 선택해 주세요.");
+            return;
+          }
+
+          try {
+            const response = await fetch(`http://localhost:8080/api/diary/${loggedInUserId}/date?date=${date}`, {
+              method: "DELETE"
+            });
+
+            if (response.ok) {
+              const result = await response.text();
+              alert(result);
+              window.location.href = "mydiary.html";
+            } else {
+              alert("삭제 실패");
+            }
+          } catch (e) {
+            alert("삭제 중 오류가 발생했습니다.");
+            console.error(e);
+          }
+        }
+
+        function clearDiaryFields() {
+          document.getElementById("date").value = "";
+          document.getElementById("title").value = "";
+          document.getElementById("content").value = "";
+          document.getElementById("weather-options").value = "";
+          document.getElementById("mood-options").value = "";
+          document.getElementById("time-of-day").value = "";
+
+          selectedMood = "";
+          selectedWeather = "";
+        }
+
+        function initDiaryEvents() {
+          const moodIcon = document.getElementById("mood-icon");
+          if (moodIcon) {
+            moodIcon.onclick = () => {
+              document.getElementById("mood-options").style.display = "block";
+            };
+          }
+
+          window.selectMood = function (mood) {
+            const moodSelect = document.getElementById("mood-options");
+            const selectedOption = moodSelect.options[moodSelect.selectedIndex];
+            const moodImage = selectedOption.getAttribute("data-img");
+
+            selectedMood = mood;
+            //document.getElementById("mood-icon").src = moodImage;
+            //moodSelect.style.display = "none";
+          };
+
+          window.selectWeather = function (weather) {
+            const weatherSelect = document.getElementById("weather-options");
+            const selectedOption = weatherSelect.options[weatherSelect.selectedIndex];
+            const weatherImage = selectedOption.getAttribute("data-img");
+
+            selectedWeather = weather;
+            //document.getElementById("weather-icon").src = weatherImage;
+            //weatherSelect.style.display = "none";
+          };
+
+          // 자동 입력 전환 흐름
+          const titleInput = document.getElementById("title");
+          const weatherSelect = document.getElementById("weather-options");
+          const moodSelect = document.getElementById("mood-options");
+          const timeSelect = document.getElementById("time-of-day");
+          const dateInput = document.getElementById("date");
+          const contentInput = document.getElementById("content");
+
+          // 제목에서 Tab 누르면 날씨로 이동
+          titleInput.addEventListener("keydown", function (e) {
+            if (e.key === "Tab") {
+              e.preventDefault();
+              weatherSelect.style.display = "block"; // 필요 시 사용
+              weatherSelect.focus();
+            }
+          });
+
+          // 날씨 선택 시 -> 기분
+          weatherSelect.addEventListener("change", function () {
+            const selectedOption = this.options[this.selectedIndex];
+            const img = selectedOption.getAttribute("data-img");
+            selectedWeather = this.value;
+            document.getElementById("weather-icon").src = img;
+            moodSelect.style.display = "block"; // 필요 시 사용
+            moodSelect.focus();
+          });
+
+          // 기분 선택 시 -> 시간
+          moodSelect.addEventListener("change", function () {
+            const selectedOption = this.options[this.selectedIndex];
+            const img = selectedOption.getAttribute("data-img");
+            selectedMood = this.value;
+            document.getElementById("mood-icon").src = img;
+            timeSelect.style.display = "block"; // 필요 시 사용
+            timeSelect.focus();
+          });
+
+          // 시간 선택 시 -> 날짜
+          timeSelect.addEventListener("change", function () {
+            dateInput.focus();
+          });
+
+          // 날짜 입력 시 -> 내용
+          dateInput.addEventListener("change", function () {
+            contentInput.focus();
+          });
+        }
+      });
+  </script>
+</body>
+</html>

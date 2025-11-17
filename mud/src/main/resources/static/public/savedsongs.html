@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mud</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
+<style>
+    .saved-songs-page,
+    .saved-songs-page * {
+      box-sizing: border-box;
+    }
+
+    .saved-songs-page {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 1440px;
+        height: 1024px;
+        align-items: stretch;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .div {
+      color: rgba(0, 0, 0, 0.54);
+      text-align: left;
+      font-family: "PathwayExtreme-Light", sans-serif;
+      font-size: 29px;
+      font-weight: 300;
+      position: absolute;
+      left: 117px;
+      top: 192px;
+      width: 141px;
+      height: 43px;
+    }
+    .image-34 {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      left: 84px;
+      top: 197px;
+      object-fit: cover;
+      aspect-ratio: 1;
+    }
+    .play-circle img,
+    .play-circle2 img,
+    .play-circle3 img,
+    .play-circle4 img,
+    .play-circle5 img,
+    .play-circle6 img,
+    .play-circle7 img,
+    .play-circle8 img,
+    .play-circle9 img,
+    .play-circle10 img,
+    .play-circle11 img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: pointer;
+    }
+    .play-circle {
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      left: 1291px;
+      top: 240px;
+      overflow: visible;
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+        z-index: 10;
+
+    }
+
+    .play-circle3 {
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      left: 1291px;
+      top: 364px;
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+        z-index: 10;
+
+    }
+    .play-circle2 {
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      left: 1291px;
+      top: 300px;
+      overflow: visible;
+        border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+        z-index: 10;
+
+    }
+    .play-circle4 {
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      left: 1291px;
+      top: 427px;
+      overflow: visible;
+        border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+        z-index: 10;
+
+    }
+    .play-circle5 {
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      left: 1291px;
+      top: 492px;
+      overflow: visible;
+        border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+        z-index: 10;
+
+    }
+    .play-circle6 {
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      left: 1291px;
+      top: 554px;
+      overflow: visible;
+        border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+        z-index: 10;
+
+    }
+    .play-circle7 {
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      left: 1291px;
+      top: 615px;
+      overflow: visible;
+        border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+        z-index: 10;
+
+    }
+    .play-circle8 {
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      left: 1291px;
+      top: 674px;
+      overflow: visible;
+        border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .play-circle9 {
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      left: 1291px;
+      top: 735px;
+      overflow: visible;
+        border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+        z-index: 10;
+
+    }
+    .play-circle10 {
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      left: 1291px;
+      top: 798px;
+      overflow: visible;
+        border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+        z-index: 10;
+
+    }
+    .play-circle11 {
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      left: 1291px;
+      top: 858px;
+      overflow: visible;
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+        z-index: 10;
+
+    }
+    .rectangle-18 {
+      background: rgba(212, 186, 234, 0.06);
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.18);
+      border-width: 1px;
+      width: 1270px;
+      height: 682px;
+      position: absolute;
+      left: 86px;
+      top: 233px;
+        z-index: 0;
+    }
+    .line-1 {
+      width: 1268px;
+      height: 0.15px;
+      position: absolute;
+      left: 87px;
+      top: 295.5px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+
+    .line-3 {
+      width: 1268px;
+      height: 0.38px;
+      position: absolute;
+      left: 87px;
+      top: 549.62px;
+      transform: translate(0px, -0.12px);
+      overflow: visible;
+    }
+    .line-4 {
+      width: 1268.01px;
+      height: 0.26px;
+      position: absolute;
+      left: 87px;
+      top: 484.5px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+    .line-5 {
+      width: 1268px;
+      height: 0.26px;
+      position: absolute;
+      left: 87px;
+      top: 422.62px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+    .line-6 {
+      width: 1268.01px;
+      height: 0.18px;
+      position: absolute;
+      left: 87px;
+      top: 359px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+    .line-2 {
+      width: 1268px;
+      height: 0.38px;
+      position: absolute;
+      left: 87px;
+      top: 610px;
+      transform: translate(0px, -0.12px);
+      overflow: visible;
+    }
+    .line-7 {
+      width: 1268px;
+      height: 0.38px;
+      position: absolute;
+      left: 87px;
+      top: 670px;
+      transform: translate(0px, -0.12px);
+      overflow: visible;
+    }
+    .line-8 {
+      width: 1268px;
+      height: 0.38px;
+      position: absolute;
+      left: 87px;
+      top: 730px;
+      transform: translate(0px, -0.12px);
+      overflow: visible;
+    }
+    .line-9 {
+      width: 1268px;
+      height: 0.38px;
+      position: absolute;
+      left: 87px;
+      top: 790px;
+      transform: translate(0px, -0.12px);
+      overflow: visible;
+    }
+    .line-10 {
+      width: 1268px;
+      height: 0.38px;
+      position: absolute;
+      left: 87px;
+      top: 855px;
+      transform: translate(0px, -0.12px);
+      overflow: visible;
+    }
+
+    ._1 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 116px;
+      top: 247px;
+      width: 58px;
+      height: 52px;
+    }
+    ._11 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 109px;
+      top: 866px;
+      width: 58px;
+      height: 52px;
+    }
+    ._10 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 109px;
+      top: 807px;
+      width: 58px;
+      height: 52px;
+    }
+    ._9 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 116px;
+      top: 743px;
+      width: 58px;
+      height: 52px;
+    }
+    ._8 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 116px;
+      top: 683px;
+      width: 58px;
+      height: 52px;
+    }
+    ._7 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 116px;
+      top: 623px;
+      width: 58px;
+      height: 52px;
+    }
+    ._6 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 116px;
+      top: 560px;
+      width: 58px;
+      height: 52px;
+    }
+    ._5 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 116px;
+      top: 498px;
+      width: 58px;
+      height: 52px;
+    }
+    ._4 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 116px;
+      top: 434px;
+      width: 58px;
+      height: 52px;
+    }
+    ._3 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 116px;
+      top: 371px;
+      width: 58px;
+      height: 52px;
+    }
+    ._2 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 116px;
+      top: 307px;
+      width: 58px;
+      height: 52px;
+    }
+    .line-12 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 679px;
+      height: 0px;
+      position: absolute;
+      left: 163px;
+      top: 236px;
+      transform-origin: 0 0;
+      transform: rotate(90deg) scale(1, 1);
+    }
+    .line-13 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 679px;
+      height: 0px;
+      position: absolute;
+      left: 1085.51px;
+      top: 234px;
+      transform-origin: 0 0;
+      transform: rotate(90deg) scale(1, 1);
+    }
+    .line-34 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 679px;
+      height: 0px;
+      position: absolute;
+      left: 1277.51px;
+      top: 234px;
+      transform-origin: 0 0;
+      transform: rotate(90deg) scale(1, 1);
+    }
+    .line-19 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 679px;
+      height: 0px;
+      position: absolute;
+      left: 848.51px;
+      top: 234px;
+      transform-origin: 0 0;
+      transform: rotate(90deg) scale(1, 1);
+    }
+    .date {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      position: absolute;
+      left: 1113px;
+      top: 249px;
+      height: 61px;
+      width: 200px;
+    }
+    .date2 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      position: absolute;
+      left: 1113px;
+      top: 309px;
+      height: 61px;
+      width: 200px;
+    }
+    .date3 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      position: absolute;
+      left: 1113px;
+      top: 377px;
+      height: 61px;
+      width: 200px;
+    }
+    .date4 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      position: absolute;
+      left: 1113px;
+      top: 437px;
+      height: 61px;
+      width: 200px;
+    }
+    .date5 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      position: absolute;
+      left: 1113px;
+      top: 503px;
+      height: 61px;
+      width: 200px;
+    }
+    .date6 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      position: absolute;
+      left: 1113px;
+      top: 564px;
+      height: 61px;
+      width: 200px;
+    }
+    .date7 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      position: absolute;
+      left: 1113px;
+      top: 629px;
+      height: 61px;
+      width: 200px;
+    }
+    .date8 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      position: absolute;
+      left: 1113px;
+      top: 689px;
+      height: 61px;
+      width: 200px;
+    }
+    .date9 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      position: absolute;
+      left: 1113px;
+      top: 746px;
+      height: 61px;
+      width: 200px;
+    }
+    .date10 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      position: absolute;
+      left: 1113px;
+      top: 809px;
+      height: 61px;
+      width: 200px;
+    }
+    .date11 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 26px;
+      font-weight: 200;
+      position: absolute;
+      left: 1113px;
+      top: 867px;
+      height: 61px;
+      width: 200px;
+    }
+     ._12 {
+      color: rgba(0, 0, 0, 0.39);
+      text-align: left;
+      font-family: "Petrona-Light", sans-serif;
+      font-size: 28px;
+      font-weight: 300;
+      position: absolute;
+      left: 660px;
+      top: 1200px;
+      width: 37px;
+      height: 22px;
+      cursor: pointer;
+      user-select: none;
+      text-align: center;
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 4px;
+      background: none;
+      border: none;
+      }
+    ._32 {
+      color: rgba(0, 0, 0, 0.39);
+      text-align: left;
+      font-family: "Petrona-Light", sans-serif;
+      font-size: 28px;
+      font-weight: 300;
+      position: absolute;
+      left: 740px;
+      top: 1200px;
+      width: 37px;
+      height: 22px;
+      cursor: pointer;
+      user-select: none;
+      text-align: center;
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 4px;
+      background: none;
+      border: none;
+      }
+    ._22 {
+      color: rgba(0, 0, 0, 0.39);
+      text-align: left;
+      font-family: "Petrona-Light", sans-serif;
+      font-size: 28px;
+      font-weight: 300;
+      position: absolute;
+      left: 700px;
+      top: 1200px;
+      width: 37px;
+      height: 22px;
+      cursor: pointer;
+      user-select: none;
+      text-align: center;
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 4px;
+      background: none;
+      border: none;
+      }
+      .tittle11 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      position: absolute;
+      left: 179px;
+      top: 862px;
+      width: 600px;
+      height: 42px;
+    }
+    .tittle10 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      position: absolute;
+      left: 179px;
+      top: 803px;
+      width: 600px;
+      height: 42px;
+    }
+    .tittle9 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      position: absolute;
+      left: 179px;
+      top: 742px;
+      width: 600px;
+      height: 42px;
+    }
+    .tittle8 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      position: absolute;
+      left: 179px;
+      top: 682px;
+      width: 600px;
+      height: 42px;
+    }
+    .tittle7 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      position: absolute;
+      left: 179px;
+      top: 622px;
+      width: 600px;
+      height: 42px;
+    }
+    .tittle6 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      position: absolute;
+      left: 179px;
+      top: 562px;
+      width: 600px;
+      height: 42px;
+    }
+    .tittle5 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      position: absolute;
+      left: 179px;
+      top: 492px;
+      width: 600px;
+      height: 42px;
+    }
+    .tittle4 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      position: absolute;
+      left: 179px;
+      top: 432px;
+      width: 600px;
+      height: 42px;
+    }
+    .tittle3 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      position: absolute;
+      left: 179px;
+      top: 372px;
+      width: 600px;
+      height: 42px;
+    }
+    .tittle2 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      position: absolute;
+      left: 179px;
+      top: 302px;
+      width: 600px;
+      height: 42px;
+    }
+    .tittle {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 34px;
+      font-weight: 200;
+      position: absolute;
+      left: 179px;
+      top: 243px;
+      width: 600px;
+      height: 42px;
+    }
+    .singer11 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 31px;
+      font-weight: 200;
+      position: absolute;
+      left: 861px;
+      top: 864px;
+      width: 219px;
+      height: 42px;
+    }
+    .singer10 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 31px;
+      font-weight: 200;
+      position: absolute;
+      left: 861px;
+      top: 804px;
+      width: 219px;
+      height: 42px;
+    }
+    .singer9 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 31px;
+      font-weight: 200;
+      position: absolute;
+      left: 861px;
+      top: 740px;
+      width: 219px;
+      height: 42px;
+    }
+    .singer8 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 31px;
+      font-weight: 200;
+      position: absolute;
+      left: 861px;
+      top: 685px;
+      width: 219px;
+      height: 42px;
+    }
+    .singer7 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 31px;
+      font-weight: 200;
+      position: absolute;
+      left: 861px;
+      top: 622px;
+      width: 219px;
+      height: 42px;
+    }
+    .singer6 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 31px;
+      font-weight: 200;
+      position: absolute;
+      left: 861px;
+      top: 567px;
+      width: 219px;
+      height: 42px;
+    }
+    .singer5 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 31px;
+      font-weight: 200;
+      position: absolute;
+      left: 861px;
+      top: 502px;
+      width: 219px;
+      height: 42px;
+    }
+    .singer4 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 31px;
+      font-weight: 200;
+      position: absolute;
+      left: 861px;
+      top: 438px;
+      width: 219px;
+      height: 42px;
+    }
+    .singer3 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 31px;
+      font-weight: 200;
+      position: absolute;
+      left: 861px;
+      top: 372px;
+      width: 219px;
+      height: 42px;
+    }
+    .singer2 {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 31px;
+      font-weight: 200;
+      position: absolute;
+      left: 861px;
+      top: 309px;
+      width: 219px;
+      height: 42px;
+    }
+    .singer {
+      color: rgba(0, 0, 0, 0.44);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 31px;
+      font-weight: 200;
+      position: absolute;
+      left: 861px;
+      top: 249px;
+      width: 219px;
+      height: 42px;
+    }
+
+    #nav-buttons {
+      position: absolute;
+      top: 60px;
+      right: 0px;
+      font-size: 30px;
+      z-index: 1000;
+    }
+
+    #nav-buttons a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .clickable {
+      cursor: pointer;
+    }
+
+     .downscaled-wrapper {
+      position: relative;
+      display: inline-block;
+      left: -55%;
+      transform: translateY(60px) scale(1.1); /* 더 아래로 (100px), 더 크게 (1.1배) */
+      transform-origin: top left;
+    }
+</style>
+</head>
+  <body style="padding: 20px;">
+  <div class="saved-songs-page">
+      <div id="nav-buttons"></div>
+      <div id="header"></div>
+      <div class="downscaled-wrapper">
+      <div class="div">저장한 노래</div>
+      <img class="image-34" src="img/image 34.png" />
+      <button class="play-circle" data-url=""><img src="img/play circle.png" alt="Play"></button>
+      <button class="play-circle2" data-url=""><img src="img/play circle.png" alt="Play"></button>
+      <button class="play-circle3" data-url=""><img src="img/play circle.png" alt="Play"></button>
+      <button class="play-circle4" data-url=""><img src="img/play circle.png" alt="Play"></button>
+      <button class="play-circle5" data-url=""><img src="img/play circle.png" alt="Play"></button>
+      <button class="play-circle6" data-url=""><img src="img/play circle.png" alt="Play"></button>
+      <button class="play-circle7" data-url=""><img src="img/play circle.png" alt="Play"></button>
+      <button class="play-circle8" data-url=""><img src="img/play circle.png" alt="Play"></button>
+      <button class="play-circle9" data-url=""><img src="img/play circle.png" alt="Play"></button>
+      <button class="play-circle10" data-url=""><img src="img/play circle.png" alt="Play"></button>
+      <button class="play-circle11" data-url=""><img src="img/play circle.png" alt="Play"></button>
+      <div class="rectangle-18"></div>
+      <img class="line-1" src="img/line 10.png" />
+      <img class="line-5" src="img/line 10.png" />
+      <img class="line-4" src="img/line 10.png" />
+      <img class="line-3" src="img/line 10.png" />
+      <img class="line-6" src="img/line 10.png" />
+      <img class="line-2" src="img/line 10.png" />
+      <img class="line-7" src="img/line 10.png" />
+      <img class="line-8" src="img/line 10.png" />
+      <img class="line-9" src="img/line 10.png" />
+      <img class="line-10" src="img/line 10.png" />
+
+
+      <div class="_1">1</div>
+      <div class="_2">2</div>
+      <div class="_3">3</div>
+      <div class="_4">4</div>
+      <div class="_5">5</div>
+      <div class="_6">6</div>
+      <div class="_7">7</div>
+      <div class="_8">8</div>
+      <div class="_9">9</div>
+      <div class="_10">10</div>
+      <div class="_11">11</div>
+      <div class="line-12"></div>
+      <img class="line-13" src="img/line 13.png" />
+      <img class="line-34" src="img/line 34.png" />
+      <img class="line-19" src="img/line 19.png" />
+      <div class="date">Date</div>
+      <div class="date2">Date</div>
+      <div class="date3">Date</div>
+      <div class="date4">Date</div>
+      <div class="date5">Date</div>
+      <div class="date6">Date</div>
+      <div class="date7">Date</div>
+      <div class="date8">Date</div>
+      <div class="date9">Date</div>
+      <div class="date10">Date</div>
+      <div class="date11">Date</div>
+      <div class="_12">1</div>
+          <!--<div class="_22">2</div>
+          <div class="_32">3</div>-->
+      <div class="tittle">Title</div>
+      <div class="tittle2">Title</div>
+      <div class="tittle3">Title</div>
+      <div class="tittle4">Title</div>
+      <div class="tittle5">Title</div>
+      <div class="tittle6">Title</div>
+      <div class="tittle7">Title</div>
+      <div class="tittle8">Title</div>
+      <div class="tittle9">Title</div>
+      <div class="tittle10">Title</div>
+      <div class="tittle11">Title</div>
+      <div class="singer">Singer</div>
+      <div class="singer2">Singer</div>
+      <div class="singer3">Singer</div>
+      <div class="singer4">Singer</div>
+      <div class="singer5">Singer</div>
+      <div class="singer6">Singer</div>
+      <div class="singer7">Singer</div>
+      <div class="singer8">Singer</div>
+      <div class="singer9">Singer</div>
+      <div class="singer10">Singer</div>
+      <div class="singer11">Singer</div>
+      </div>
+  </div>
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let loggedInUserId = null;  // 로그인 아이디 저장용
+
+        // 1. header.html 불러오기
+        fetch('header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('header').innerHTML = data;
+            checkLoginStatus(); // header 삽입 후 로그인 상태 확인
+          });
+
+        // 2. 로그인 상태 확인 함수
+        function checkLoginStatus() {
+          fetch('http://localhost:8080/api/users/check-login', {
+            method: 'GET',
+            credentials: 'include'
+          })
+          .then(response => response.json())
+          .then(data => {
+            const navButtons = document.getElementById("nav-buttons");
+
+            if (data.isLoggedIn) {
+              loggedInUserId = data.userId || data.username || null; // 서버 응답 형태에 맞게 조정
+              navButtons.innerHTML = `
+                <a href="mypage.html">MyPage</a>
+                <a href="#" id="logoutBtn">Logout</a>
+              `;
+
+              // 로그아웃 버튼 이벤트 바인딩
+              document.getElementById("logoutBtn").addEventListener("click", (event) => {
+                event.preventDefault();
+                fetch('http://localhost:8080/api/users/logout', {
+                  method: 'GET',
+                  credentials: 'include'
+                })
+                .then(response => {
+                  if (response.ok) {
+                    alert("로그아웃 되었습니다.");
+                    window.location.href = "main.html";
+                  } else {
+                    alert("로그아웃 실패");
+                  }
+                });
+              });
+
+              loadSongs(loggedInUserId);
+
+            } else {
+              alert("로그인이 필요합니다.");
+              window.location.href = "login.html";
+            }
+          })
+          .catch(() => {
+            alert("로그인이 필요합니다.");
+            window.location.href = "login.html";
+          });
+        }
+
+        // 3. 로그인 아이디로 노래 목록 불러와서 화면에 뿌리기
+        function loadSongs(userId) {
+          const playButtons = [
+            "play-circle", "play-circle2", "play-circle3", "play-circle4", "play-circle5",
+            "play-circle6", "play-circle7", "play-circle8", "play-circle9", "play-circle10", "play-circle11"
+          ];
+          const dateDivs = [
+            "date", "date2", "date3", "date4", "date5",
+            "date6", "date7", "date8", "date9", "date10", "date11"
+          ];
+          const titleDivs = [
+            "tittle", "tittle2", "tittle3", "tittle4", "tittle5",
+            "tittle6", "tittle7", "tittle8", "tittle9", "tittle10", "tittle11"
+          ];
+          const singerDivs = [
+            "singer", "singer2", "singer3", "singer4", "singer5",
+            "singer6", "singer7", "singer8", "singer9", "singer10", "singer11"
+          ];
+
+          fetch(`http://localhost:8080/api/saved/user/${encodeURIComponent(userId)}`)
+          .then(response => response.json())
+          .then(songs => {
+            songs.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+            for (let i = 0; i < playButtons.length; i++) {
+              const song = songs[i];
+              if (!song) break;
+
+              const dateElem = document.querySelector(`.${dateDivs[i]}`);
+              const titleElem = document.querySelector(`.${titleDivs[i]}`);
+              const singerElem = document.querySelector(`.${singerDivs[i]}`);
+              const btnElem = document.querySelector(`.${playButtons[i]}`);
+
+              if (dateElem) dateElem.textContent = song.date || "Date";
+              if (titleElem) titleElem.textContent = song.title || "Title";
+              if (singerElem) {
+                const artist = song.artist || "Singer";
+                singerElem.textContent = artist.length > 10 ? artist.slice(0, 10) + "..." : artist;
+              }
+
+              if (btnElem) {
+                btnElem.setAttribute('data-url', song.url || "");
+                btnElem.addEventListener("click", () => {
+                  const url = btnElem.getAttribute("data-url");
+                  if (url) {
+                    window.open(url, "_blank");
+                  } else {
+                    alert("재생할 URL이 없습니다.");
+                  }
+                });
+              }
+            }
+
+            const numberDivs = [
+              document.querySelector("._1"),
+              document.querySelector("._2"),
+              document.querySelector("._3"),
+              document.querySelector("._4"),
+              document.querySelector("._5"),
+              document.querySelector("._6"),
+              document.querySelector("._7"),
+              document.querySelector("._8"),
+              document.querySelector("._9"),
+              document.querySelector("._10"),
+              document.querySelector("._11"),
+            ];
+
+            const pageButtons = document.querySelectorAll("._12, ._22, ._32");
+
+            pageButtons.forEach((btn, index) => {
+              btn.addEventListener("click", () => {
+                const pageNumber = index + 1;
+                const start = (pageNumber - 1) * 11 + 1;
+                numberDivs.forEach((div, i) => {
+                  div.textContent = start + i;
+                });
+              });
+            });
+
+          })
+          .catch(error => {
+            console.error("노래 정보 로드 실패:", error);
+            alert("노래 정보를 불러오지 못했습니다.");
+          });
+         }
+        });
+  </script>
+  </body>
+</html>

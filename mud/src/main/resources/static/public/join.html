@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mud</title>
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .join-page {
+      background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 20px;
+    }
+    .join-page .div {
+      background-color: #ffffff;
+      width: 1440px;
+      height: 1024px;
+      position: relative;
+    }
+    .join-login {
+      width: 303px;
+      top: 69px;
+      left: 1135px;
+      font-family: "Playfair-Bold", Helvetica;
+      font-weight: 700;
+      color: #000000;
+      font-size: 30px;
+      position: absolute;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    .join-page .overlap-group-2 {
+      position: absolute;
+      width: 574px;
+      height: 676px;
+      top: 190px;
+      left: 419px;
+    }
+    .join-page .rectangle {
+      position: absolute;
+      width: 600px;
+      height: 710px;
+      top: 100px;
+      left: 0;
+      background-color: #fbf6f6;
+    }
+    .join-page .text-wrapper-2 {
+      position: absolute;
+      width: 150px;
+      top: 60px;
+      left: 2px;
+      font-family: "Pathway Extreme-Light", Helvetica;
+      font-weight: 300;
+      color: #0000008a;
+      font-size: 29px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+    .rectangle-input {
+      position: absolute;
+      width: 446px;
+      height: 56px;
+      padding: 20px 15px;
+      font-size: 18px;
+      font-family: "Playfair Display-Regular", Helvetica;
+      color: #000;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    .rectangle-input::placeholder {
+      color: #aaa;
+    }
+    .join-button {
+      position: absolute;
+      top: 670px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 220px;
+      height: 57px;
+      line-height: 50px;
+      background-color: #bc878791;
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .googleLoginBtn {
+  position: absolute;
+  top: 737px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 57px;
+  padding: 0;
+}
+    .gsi-material-button {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-color: white;
+  background-image: none;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #1f1f1f;
+  cursor: pointer;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.25px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 12px;
+  text-align: center;
+  -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+  vertical-align: middle;
+  white-space: nowrap;
+  /* 위치, 크기 관련 제거:
+  height, width, max-width, min-width, position, etc. 삭제 */
+}
+
+.gsi-material-button .gsi-material-button-icon {
+  height: 20px;
+  margin-right: 12px;
+  min-width: 20px;
+  width: 20px;
+}
+
+.gsi-material-button .gsi-material-button-content-wrapper {
+  -webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.gsi-material-button .gsi-material-button-contents {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+.gsi-material-button .gsi-material-button-state {
+  -webkit-transition: opacity .218s;
+  transition: opacity .218s;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.gsi-material-button:disabled {
+  cursor: default;
+  background-color: #ffffff61;
+  border-color: #1f1f1f1f;
+}
+
+.gsi-material-button:disabled .gsi-material-button-contents {
+  opacity: 38%;
+}
+
+.gsi-material-button:disabled .gsi-material-button-icon {
+  opacity: 38%;
+}
+
+.gsi-material-button:not(:disabled):active .gsi-material-button-state,
+.gsi-material-button:not(:disabled):focus .gsi-material-button-state {
+  background-color: #303030;
+  opacity: 12%;
+}
+
+.gsi-material-button:not(:disabled):hover {
+  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+
+.gsi-material-button:not(:disabled):hover .gsi-material-button-state {
+  background-color: #303030;
+  opacity: 8%;
+}
+    .join-page .text-wrapper-6,
+    .join-page .text-wrapper-7,
+    .join-page .text-wrapper-8,
+    .join-page .text-wrapper-9,
+    .join-page .text-wrapper-11 {
+      position: absolute;
+      font-family: "Playfair Display-SemiBold", Helvetica;
+      font-weight: 600;
+      color: #00000063;
+      font-size: 24px;
+      letter-spacing: 0;
+      line-height: normal;
+      margin-bottom: 30px;
+    }
+    .join-page .text-wrapper-6 { top: 150px; left: 59px; }
+    .join-page .text-wrapper-7 { top: 253px; left: 59px; }
+    .join-page .text-wrapper-8 { top: 360px; left: 59px; }
+    .join-page .text-wrapper-9 { top: 460px; left: 59px; }
+    .join-page .text-wrapper-11 { top: 560px; left: 59px; }
+    input#userId { top: 180px; left: 52px; }
+    input#password { top: 283px; left: 52px; }
+    input#confirmPassword { top: 390px; left: 52px; }
+    input#username { top: 490px; left: 52px; }
+    input#email { top: 590px; left: 52px; }
+
+#checkDuplicateBtn {
+  position: absolute;
+  top: 187px; /* 아이디 입력 필드 바로 아래에 위치하도록 조정 */
+  left: 506px; /* 아이디 입력 필드 바로 옆에 위치 */
+  width: 60px; /* 크기 작게 */
+  height: 40px; /* 크기 작게 */
+  background-color: #bc8787; /* 배경 색상 */
+  color: #fff; /* 글자 색상 */
+  font-size: 12px; /* 글자 크기 작게 */
+  font-family: "Playfair Display-Regular", Helvetica;
+  border: none; /* 테두리 제거 */
+  border-radius: 6px; /* 둥근 모서리 */
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px; /* 수직 중앙 정렬 */
+  transition: background-color 0.3s ease; /* 배경 색상 변화 효과 */
+}
+
+#checkDuplicateBtn:hover {
+  background-color: #9b6a6a; /* 마우스를 올렸을 때 색상 변경 */
+}
+
+        #nav-buttons {
+      position: absolute;
+      top: 60px;
+      right: 50px;
+      font-size: 30px;
+      z-index: 1000;
+    }
+    #nav-buttons a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .clickable {
+      cursor: pointer;
+    }
+
+    .downscaled-wrapper {
+      position: relative;
+      display: inline-block;
+      left: -10%;
+      transform: translateY(0px) scale(1.3);
+    }
+
+  </style>
+</head>
+<body>
+<div class="join-page">
+  <div class="div">
+    <div id="nav-buttons"></div>
+    <div id="header"></div>
+    <div class="downscaled-wrapper">
+    <div class="overlap-group-2">
+      <div class="rectangle"></div>
+      <div class="text-wrapper-2">Join</div>
+      <div class="text-wrapper-6">ID</div>
+      <input id="userId" class="rectangle-input" type="text" placeholder="6-20자의 영문, 숫자 포함" />
+      <button type="button" id="checkDuplicateBtn">중복 확인</button>
+      <div class="text-wrapper-7">Password</div>
+      <input id="password" class="rectangle-input" type="password" placeholder="8-24자의 영문, 숫자 포함" />
+      <div class="text-wrapper-8">Confirm Password</div>
+      <input id="confirmPassword" class="rectangle-input" type="password" placeholder="비밀번호를 다시 입력하세요" />
+      <div class="text-wrapper-9">Name</div>
+      <input id="username" class="rectangle-input" type="text" placeholder="이름을 입력하세요" />
+      <div class="text-wrapper-11">Email</div>
+      <input id="email" class="rectangle-input" type="text" placeholder="이메일을 입력해주세요" />
+      <div id="joinButton" class="join-button">Join</div>
+      <button class="googleLoginBtn gsi-material-button" id="googleLoginBtn" aria-label="Google Login">
+        <div class="gsi-material-button-state"></div>
+        <div class="gsi-material-button-content-wrapper">
+          <div class="gsi-material-button-icon">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="display: block;">
+              <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+              <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+              <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+              <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+              <path fill="none" d="M0 0h48v48H0z"></path>
+            </svg>
+          </div>
+          <span class="gsi-material-button-contents">Sign in with Google</span>
+          <span style="display: none;">Sign in with Google</span>
+        </div>
+      </button>
+    </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // ------------------------
+    // [1] Header 삽입 및 로그인 상태 확인
+    // ------------------------
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+        checkLoginStatus(); // header 삽입 후 로그인 상태 확인
+      });
+
+    function checkLoginStatus() {
+      fetch('http://localhost:8080/api/users/check-login', {
+        method: 'GET',
+        credentials: 'include'
+      })
+        .then(response => response.json())
+        .then(data => {
+          const navButtons = document.getElementById("nav-buttons");
+
+          if (data.isLoggedIn) {
+            navButtons.innerHTML = `
+              <a href="mypage.html">MyPage</a>
+              <a href="#" id="logoutBtn">Logout</a>
+            `;
+            document.getElementById("logoutBtn").addEventListener("click", (event) => {
+              event.preventDefault();
+              fetch('http://localhost:8080/api/users/logout', {
+                method: 'GET',
+                credentials: 'include'
+              })
+                .then(response => {
+                  if (response.ok) {
+                    alert("로그아웃 되었습니다.");
+                    window.location.href = "main.html";
+                  } else {
+                    alert("로그아웃 실패");
+                  }
+                });
+            });
+          } else {
+            navButtons.innerHTML = `
+              <a href="join.html">Join</a>
+              <a href="login.html">Login</a>
+            `;
+          }
+        })
+        .catch(() => {
+          document.getElementById("nav-buttons").innerHTML = `
+            <a href="join.html">Join</a>
+            <a href="login.html">Login</a>
+          `;
+        });
+    }
+
+    // ------------------------
+    // [2] 구글 로그인 버튼 클릭 시 Google OAuth URL로 이동
+    // ------------------------
+    document.getElementById("googleLoginBtn").addEventListener("click", () => {
+      const clientId = '318299485693-o1mgilivugkp0huk124bo2hjfe6ci3s2.apps.googleusercontent.com';
+      const redirectUri = 'http://localhost:8080/oauth/google';
+
+      const url = 'https://accounts.google.com/o/oauth2/v2/auth?' + new URLSearchParams({
+        client_id: clientId,
+        redirect_uri: redirectUri,
+        response_type: 'code',
+        scope: 'openid email profile phone',
+        access_type: 'offline',
+        prompt: 'consent'
+      });
+
+      window.location.href = url;
+    });
+
+    // ------------------------
+    // [3] 회원가입 입력 필드 초기화
+    // ------------------------
+    let isDuplicateChecked = false;
+
+    const userIdInput = document.getElementById('userId');
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirmPassword');
+    const nameInput = document.getElementById('username');
+    const emailInput = document.getElementById('email');
+    const joinButton = document.getElementById('joinButton');
+
+    // ------------------------
+    // [4] 아이디 중복 확인
+    // ------------------------
+    document.getElementById('checkDuplicateBtn').addEventListener('click', function () {
+      const userId = userIdInput.value;
+      if (!userId.trim()) {
+        alert('아이디를 입력하세요.');
+        return;
+      }
+
+      fetch(`/api/users/check-duplicate?userId=${encodeURIComponent(userId)}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.isDuplicate) {
+            alert('이미 사용 중인 아이디입니다.');
+            isDuplicateChecked = false;
+          } else {
+            alert('사용 가능한 아이디입니다.');
+            isDuplicateChecked = true;
+            passwordInput.focus();
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('중복 확인 중 오류가 발생했습니다.');
+          isDuplicateChecked = false;
+        });
+    });
+
+    // ------------------------
+    // [5] 필드 간 자동 포커스 이동
+    // ------------------------
+    userIdInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        document.getElementById('checkDuplicateBtn').click();
+      }
+    });
+
+    confirmPasswordInput.addEventListener('keyup', function () {
+      if (confirmPasswordInput.value.length >= passwordInput.value.length) {
+        nameInput.focus();
+      }
+    });
+
+    nameInput.addEventListener('keyup', function (e) {
+      if (nameInput.value.trim().length === 3) {
+        nameInput.blur();
+        setTimeout(() => phoneInput.focus(), 0);
+      }
+    });
+
+    // ------------------------
+    // [6] 엔터키로 전체 폼 제출
+    // ------------------------
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        const userId = userIdInput.value.trim();
+        const password = passwordInput.value.trim();
+        const confirmPassword = confirmPasswordInput.value.trim();
+        const username = nameInput.value.trim();
+        const email = emailInput.value.trim();
+
+        const allFilled = userId && password && confirmPassword && username && email;
+
+        if (allFilled) {
+          e.preventDefault();
+          joinButton.click();
+        }
+      }
+    });
+
+    // ------------------------
+    // [7] 회원가입 버튼 클릭 이벤트
+    // ------------------------
+    joinButton.addEventListener('click', async function () {
+      const userId = userIdInput.value.trim();
+      const password = passwordInput.value.trim();
+      const confirmPassword = confirmPasswordInput.value.trim();
+      const username = nameInput.value.trim();
+      const email = emailInput.value.trim();
+
+      // 입력값 검증
+      if (!userId || !password || !confirmPassword || !username || !email) {
+        alert('모든 항목을 입력해야 합니다.');
+        return;
+      }
+      if (!/^[a-zA-Z0-9]{6,20}$/.test(userId)) {
+        alert('ID는 6~20자의 영문, 숫자 조합이어야 합니다.');
+        return;
+      }
+      if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,24}$/.test(password)) {
+        alert('비밀번호는 8~24자 영문과 숫자를 포함해야 합니다.');
+        return;
+      }
+      if (password !== confirmPassword) {
+        alert('비밀번호가 일치하지 않습니다.');
+        confirmPasswordInput.focus();
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert('유효한 이메일 주소를 입력해야 합니다.');
+        emailInput.focus();
+        return;
+      }
+      if (!isDuplicateChecked) {
+        alert('아이디 중복 확인을 먼저 해주세요.');
+        return;
+      }
+
+      // 회원가입 요청
+      const userData = { userId, password, username, email };
+
+      try {
+        const response = await fetch('http://localhost:8080/api/users/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(userData)
+        });
+
+        if (response.ok) {
+          alert('회원가입 성공! 로그인 페이지로 이동합니다.');
+          window.location.href = "login.html";
+        } else {
+          const errorText = await response.text();
+          alert('회원가입 실패: ' + errorText);
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('서버 연결에 실패했습니다.');
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mud</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
+<style>
+    .my-diary-page,
+    .my-diary-page * {
+      box-sizing: border-box;
+    }
+
+    .my-diary-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1440px;
+    height: 1024px;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+    }
+
+    .rectangle-18 {
+      background: rgba(235, 211, 244, 0.04);
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.18);
+      border-width: 1px;
+      width: 1270px;
+      height: 682px;
+      position: absolute;
+      left: 100px;
+      top: 231px;
+    }
+    .tittle11 {
+      color: rgba(0, 0, 0, 0.27);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      position: absolute;
+      left: 186px;
+      top: 866px;
+      width: 600px;
+      height: 46px;
+      cursor: pointer;
+    }
+    .tittle10 {
+      color: rgba(0, 0, 0, 0.27);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      position: absolute;
+      left: 186px;
+      top: 806px;
+      width: 600px;
+      height: 46px;
+      cursor: pointer;
+    }
+    .tittle9 {
+      color: rgba(0, 0, 0, 0.27);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      position: absolute;
+      left: 186px;
+      top: 746px;
+      width: 600px;
+      height: 46px;
+      cursor: pointer;
+    }
+    .tittle8 {
+      color: rgba(0, 0, 0, 0.27);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      position: absolute;
+      left: 186px;
+      top: 686px;
+      width: 600px;
+      height: 46px;
+      cursor: pointer;
+    }
+    .tittle7 {
+      color: rgba(0, 0, 0, 0.27);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      position: absolute;
+      left: 186px;
+      top: 626px;
+      width: 600px;
+      height: 46px;
+      cursor: pointer;
+    }
+    .tittle6 {
+      color: rgba(0, 0, 0, 0.27);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      position: absolute;
+      left: 186px;
+      top: 566px;
+      width: 600px;
+      height: 46px;
+      cursor: pointer;
+    }
+    .tittle5 {
+      color: rgba(0, 0, 0, 0.27);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      position: absolute;
+      left: 186px;
+      top: 496px;
+      width: 600px;
+      height: 46px;
+      cursor: pointer;
+    }
+    .tittle4 {
+      color: rgba(0, 0, 0, 0.27);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      position: absolute;
+      left: 186px;
+      top: 436px;
+      width: 600px;
+      height: 46px;
+      cursor: pointer;
+    }
+    .tittle3 {
+      color: rgba(0, 0, 0, 0.27);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      position: absolute;
+      left: 186px;
+      top: 376px;
+      width: 600px;
+      height: 46px;
+      cursor: pointer;
+    }
+    .tittle2 {
+      color: rgba(0, 0, 0, 0.27);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      position: absolute;
+      left: 186px;
+      top: 307px;
+      width: 600px;
+      height: 46px;
+      cursor: pointer;
+    }
+    .tittle {
+      color: rgba(0, 0, 0, 0.27);
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      position: absolute;
+      left: 186px;
+      top: 246px;
+      width: 600px;
+      height: 46px;
+      cursor: pointer;
+    }
+    .line-1 {
+    margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 1268px;
+      height: 0.15px;
+      position: absolute;
+      left: 101px;
+      top: 293.5px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+    .line-2 {
+    margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 1268px;
+      height: 0.03px;
+      position: absolute;
+      left: 101px;
+      top: 610.62px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+    .line-8 {
+    margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 1268px;
+      height: 0.12px;
+      position: absolute;
+      left: 102px;
+      top: 853px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+    .line-9 {
+    margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 1268px;
+      height: 0.12px;
+      position: absolute;
+      left: 101px;
+      top: 793.5px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+    .line-10 {
+    margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 1268px;
+      height: 0.38px;
+      position: absolute;
+      left: 101px;
+      top: 737px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+    .line-11 {
+    margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 1268px;
+      height: 0.12px;
+      position: absolute;
+      left: 101px;
+      top: 673.62px;
+      transform: translate(0px, -0.62px);
+      overflow: visible;
+    }
+    .line-3 {
+    margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 1268px;
+      height: 0.38px;
+      position: absolute;
+      left: 101px;
+      top: 547.62px;
+      transform: translate(0px, -0.12px);
+      overflow: visible;
+    }
+    .line-4 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 1268.01px;
+      height: 0.26px;
+      position: absolute;
+      left: 101px;
+      top: 482.5px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+    .line-5 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 1268px;
+      height: 0.08px;
+      position: absolute;
+      left: 101px;
+      top: 420.62px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+    .line-6 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 1268.01px;
+      height: 0.18px;
+      position: absolute;
+      left: 101px;
+      top: 357px;
+      transform: translate(0px, -0.5px);
+      overflow: visible;
+    }
+    .line-12 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 679px;
+      height: 0px;
+      position: absolute;
+      left: 177px;
+      top: 234px;
+      transform-origin: 0 0;
+      transform: rotate(90deg) scale(1, 1);
+    }
+    .line-14 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 682px;
+      height: 0px;
+      position: absolute;
+      left: 1026.5px;
+      top: 232px;
+      transform-origin: 0 0;
+      transform: rotate(90.084deg) scale(1, 1);
+    }
+    .line-17 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 682px;
+      height: 0px;
+      position: absolute;
+      left: 947.5px;
+      top: 232px;
+      transform-origin: 0 0;
+      transform: rotate(90.084deg) scale(1, 1);
+    }
+    .line-16 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 682px;
+      height: 0px;
+      position: absolute;
+      left: 875px;
+      top: 232px;
+      transform-origin: 0 0;
+      transform: rotate(90.084deg) scale(1, 1);
+    }
+     .line-13 {
+      margin-top: -1px;
+      border-style: solid;
+      border-color: rgba(3, 3, 3, 0.18);
+      border-width: 1px 0 0 0;
+      width: 682px;
+      height: 0px;
+      position: absolute;
+      left: 1158.51px;
+      top: 232px;
+      transform-origin: 0 0;
+      transform: rotate(90.084deg) scale(1, 1);
+    }
+    ._1 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 132px;
+      top: 241px;
+      width: 58px;
+      height: 52px;
+    }
+    ._11 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 127px;
+      top: 864px;
+      width: 58px;
+      height: 52px;
+    }
+    ._10 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 121px;
+      top: 805px;
+      width: 58px;
+      height: 52px;
+    }
+    ._9 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 129px;
+      top: 743px;
+      width: 58px;
+      height: 52px;
+    }
+    ._8 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 126px;
+      top: 685px;
+      width: 58px;
+      height: 52px;
+    }
+    ._7 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 132px;
+      top: 621px;
+      width: 58px;
+      height: 52px;
+    }
+    ._6 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 129px;
+      top: 556px;
+      width: 58px;
+      height: 52px;
+    }
+    ._5 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 129px;
+      top: 493px;
+      width: 58px;
+      height: 52px;
+    }
+    ._4 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 129px;
+      top: 430px;
+      width: 58px;
+      height: 52px;
+    }
+    ._3 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 128px;
+      top: 366px;
+      width: 58px;
+      height: 52px;
+    }
+    ._2 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 32px;
+      font-weight: 200;
+      position: absolute;
+      left: 129px;
+      top: 302px;
+      width: 58px;
+      height: 52px;
+    }
+
+    ._12 {
+      color: rgba(0, 0, 0, 0.39);
+      text-align: left;
+      font-family: "Petrona-Light", sans-serif;
+      font-size: 28px;
+      font-weight: 300;
+      position: absolute;
+      left: 660px;
+      top: 1200px;
+      width: 37px;
+      height: 22px;
+      cursor: pointer;
+      user-select: none;
+      text-align: center;
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 4px;
+      background: none;
+      border: none;
+      }
+    ._32 {
+      color: rgba(0, 0, 0, 0.39);
+      text-align: left;
+      font-family: "Petrona-Light", sans-serif;
+      font-size: 28px;
+      font-weight: 300;
+      position: absolute;
+      left: 740px;
+      top: 1200px;
+      width: 37px;
+      height: 22px;
+      cursor: pointer;
+      user-select: none;
+      text-align: center;
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 4px;
+      background: none;
+      border: none;
+      }
+    ._22 {
+      color: rgba(0, 0, 0, 0.39);
+      text-align: left;
+      font-family: "Petrona-Light", sans-serif;
+      font-size: 28px;
+      font-weight: 300;
+      position: absolute;
+      left: 700px;
+      top: 1200px;
+      width: 37px;
+      height: 22px;
+      cursor: pointer;
+      user-select: none;
+      text-align: center;
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 4px;
+      background: none;
+      border: none;
+      }
+    .div {
+      color: rgba(0, 0, 0, 0.54);
+      text-align: left;
+      font-family: "PathwayExtreme-Light", sans-serif;
+      font-size: 29px;
+      font-weight: 300;
+      position: absolute;
+      left: 133px;
+      top: 188px;
+      width: 141px;
+      height: 43px;
+    }
+    .image-33 {
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      left: 100px;
+      top: 194px;
+      object-fit: cover;
+      aspect-ratio: 1;
+    }
+    .mood11 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 881px;
+      top: 870px;
+      width: 88px;
+      height: 39px;
+    }
+    .mood10 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 881px;
+      top: 811px;
+      width: 88px;
+      height: 39px;
+    }
+    .mood9 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 881px;
+      top: 752px;
+      width: 88px;
+      height: 39px;
+    }
+    .mood8 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 881px;
+      top: 692px;
+      width: 88px;
+      height: 39px;
+    }
+    .mood7 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 881px;
+      top: 630px;
+      width: 88px;
+      height: 39px;
+    }
+    .mood6 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 881px;
+      top: 566px;
+      width: 88px;
+      height: 39px;
+    }
+    .mood5 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 881px;
+      top: 502px;
+      width: 88px;
+      height: 39px;
+    }
+    .mood4 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 881px;
+      top: 438px;
+      width: 88px;
+      height: 39px;
+    }
+    .mood3 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 881px;
+      top: 378px;
+      width: 88px;
+      height: 39px;
+    }
+    .mood2 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 881px;
+      top: 314px;
+      width: 88px;
+      height: 39px;
+    }
+    .mood {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 881px;
+      top: 249px;
+      width: 88px;
+      height: 39px;
+    }
+    .weather11 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 951px;
+      top: 871px;
+      width: 113px;
+      height: 47px;
+    }
+    .weather10 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 951px;
+      top: 811px;
+      width: 113px;
+      height: 47px;
+    }
+    .weather9 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 951px;
+      top: 752px;
+      width: 113px;
+      height: 47px;
+    }
+    .weather8 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 951px;
+      top: 693px;
+      width: 113px;
+      height: 47px;
+    }
+    .weather7 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 951px;
+      top: 631px;
+      width: 113px;
+      height: 47px;
+    }
+    .weather6 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 951px;
+      top: 568px;
+      width: 113px;
+      height: 47px;
+    }
+    .weather5 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 951px;
+      top: 504px;
+      width: 113px;
+      height: 47px;
+    }
+    .weather4 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 951px;
+      top: 440px;
+      width: 113px;
+      height: 47px;
+    }
+    .weather3 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 951px;
+      top: 378px;
+      width: 113px;
+      height: 47px;
+    }
+    .weather2 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 951px;
+      top: 315px;
+      width: 113px;
+      height: 47px;
+    }
+    .weather {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      position: absolute;
+      left: 951px;
+      top: 251px;
+      width: 113px;
+      height: 47px;
+    }
+    .time11 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1048px;
+      top: 860px;
+      width: 103px;
+      height: 49px;
+    }
+    .time10 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1048px;
+      top: 800px;
+      width: 103px;
+      height: 49px;
+    }
+    .time9 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1048px;
+      top: 740px;
+      width: 103px;
+      height: 49px;
+    }
+    .time8 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1048px;
+      top: 680px;
+      width: 103px;
+      height: 49px;
+    }
+    .time7 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1048px;
+      top: 621px;
+      width: 103px;
+      height: 49px;
+    }
+    .time6 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1048px;
+      top: 560px;
+      width: 103px;
+      height: 49px;
+    }
+    .time5 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1048px;
+      top: 491px;
+      width: 103px;
+      height: 49px;
+    }
+    .time4 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1048px;
+      top: 431px;
+      width: 103px;
+      height: 49px;
+    }
+    .time3 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1048px;
+      top: 361px;
+      width: 103px;
+      height: 49px;
+    }
+    .time2 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1048px;
+      top: 301px;
+      width: 103px;
+      height: 49px;
+    }
+    .time {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1048px;
+      top: 241px;
+      width: 103px;
+      height: 49px;
+    }
+    .date11 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1174px;
+      top: 862px;
+      width: 226px;
+      height: 64px;
+    }
+    .date10 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1174px;
+      top: 800px;
+      width: 226px;
+      height: 64px;
+    }
+    .date9 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1174px;
+      top: 740px;
+      width: 226px;
+      height: 64px;
+    }
+    .date8 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1174px;
+      top: 680px;
+      width: 226px;
+      height: 64px;
+    }
+    .date7 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1174px;
+      top: 618px;
+      width: 226px;
+      height: 64px;
+    }
+    .date6 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1174px;
+      top: 558px;
+      width: 226px;
+      height: 64px;
+    }
+    .date5 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1174px;
+      top: 495px;
+      width: 226px;
+      height: 64px;
+    }
+    .date4 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1174px;
+      top: 428px;
+      width: 226px;
+      height: 64px;
+    }
+    .date3 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1174px;
+      top: 364px;
+      width: 226px;
+      height: 64px;
+    }
+    .date2 {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1174px;
+      top: 302px;
+      width: 226px;
+      height: 64px;
+    }
+    .date {
+      color: #000000;
+      text-align: left;
+      font-family: "PathwayExtreme-ExtraLight", sans-serif;
+      font-size: 36px;
+      font-weight: 200;
+      position: absolute;
+      left: 1174px;
+      top: 242px;
+      width: 226px;
+      height: 64px;
+    }
+
+            #nav-buttons {
+          position: absolute;
+          top: 60px;
+          right: 50px;
+          font-size: 30px;
+          z-index: 1000;
+        }
+        #nav-buttons a {
+          margin-left: 15px;
+          text-decoration: none;
+          color: #333;
+          font-weight: bold;
+        }
+
+        .clickable {
+          cursor: pointer;
+        }
+
+        .diary-wrapper {
+        }
+
+        .downscaled-wrapper {
+          position: relative;
+          display: inline-block;
+          left: -55%;
+          transform: translateY(60px) scale(1.1); /* 더 아래로 (100px), 더 크게 (1.1배) */
+          transform-origin: top left;
+        }
+</style>
+</head>
+  <body style="padding: 20px;">
+  <div class="my-diary-page">
+      <div id="nav-buttons"></div>
+      <div id="header"></div>
+      <div class="downscaled-wrapper">
+      <div class="rectangle-18"></div>
+      <img class="line-1" />
+      <img class="line-2"/>
+      <img class="line-8" />
+      <img class="line-9" />
+      <img class="line-10"/>
+      <img class="line-11"/>
+      <img class="line-3"/>
+      <img class="line-4"/>
+      <img class="line-5"/>
+      <img class="line-6"/>
+      <div class="line-12"></div>
+      <img class="line-14" src="img/line 14.png" />
+      <img class="line-17" src="img/line-17.png" />
+      <img class="line-13" src="img/line 13.png" />
+
+      <div class="line-16"></div>
+      <div class="_1">1</div>
+      <div class="_2">2</div>
+      <div class="_3">3</div>
+      <div class="_4">4</div>
+      <div class="_5">5</div>
+      <div class="_6">6</div>
+      <div class="_7">7</div>
+      <div class="_8">8</div>
+      <div class="_9">9</div>
+      <div class="_10">10</div>
+      <div class="_11">11</div>
+      <div class="tittle">Title</div>
+      <div class="tittle2">Title</div>
+      <div class="tittle3">Title</div>
+      <div class="tittle4">Title</div>
+      <div class="tittle5">Title</div>
+      <div class="tittle6">Title</div>
+      <div class="tittle7">Title</div>
+      <div class="tittle8">Title</div>
+      <div class="tittle9">Title</div>
+      <div class="tittle10">Title</div>
+      <div class="tittle11">Title</div>
+      <div class="mood">Mood</div>
+      <div class="mood2">Mood</div>
+      <div class="mood3">Mood</div>
+      <div class="mood4">Mood</div>
+      <div class="mood5">Mood</div>
+      <div class="mood6">Mood</div>
+      <div class="mood7">Mood</div>
+      <div class="mood8">Mood</div>
+      <div class="mood9">Mood</div>
+      <div class="mood10">Mood</div>
+      <div class="mood11">Mood</div>
+      <div class="weather">weather</div>
+      <div class="weather2">weather</div>
+      <div class="weather3">weather</div>
+      <div class="weather4">weather</div>
+      <div class="weather5">weather</div>
+      <div class="weather6">weather</div>
+      <div class="weather7">weather</div>
+      <div class="weather8">weather</div>
+      <div class="weather9">weather</div>
+      <div class="weather10">weather</div>
+      <div class="weather11">weather</div>
+      <div class="time">Time</div>
+      <div class="time2">Time</div>
+      <div class="time3">Time</div>
+      <div class="time4">Time</div>
+      <div class="time5">Time</div>
+      <div class="time6">Time</div>
+      <div class="time7">Time</div>
+      <div class="time8">Time</div>
+      <div class="time9">Time</div>
+      <div class="time10">Time</div>
+      <div class="time11">Time</div>
+      <div class="date">Date</div>
+      <div class="date2">Date</div>
+      <div class="date3">Date</div>
+      <div class="date4">Date</div>
+      <div class="date5">Date</div>
+      <div class="date6">Date</div>
+      <div class="date7">Date</div>
+      <div class="date8">Date</div>
+      <div class="date9">Date</div>
+      <div class="date10">Date</div>
+      <div class="date11">Date</div>
+      <button class="_12" data-page="1">1</button>
+<!--      <button class="_22" data-page="2">2</button>
+      <button class="_32" data-page="3">3</button>-->
+      <div class="div">작성한 일기</div>
+      <img class="image-33" src="img/image 33.png" />
+      </div>
+      </div>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+   fetch('header.html')
+     .then(response => response.text())
+     .then(data => {
+       document.getElementById('header').innerHTML = data;
+       checkLoginStatus();
+     });
+
+   function checkLoginStatus() {
+     fetch('http://localhost:8080/api/users/check-login', {
+       method: 'GET',
+       credentials: 'include'
+     })
+     .then(response => response.json())
+     .then(data => {
+       const navButtons = document.getElementById("nav-buttons");
+
+       if (!data.isLoggedIn) {
+         alert("로그인 후 이용해주세요.");
+         window.location.href = "login.html";
+         return;
+       }
+
+       const userId = data.userId;
+       navButtons.innerHTML = `
+         <a href="mypage.html">MyPage</a>
+         <a href="#" id="logoutBtn">Logout</a>
+       `;
+       document.getElementById("logoutBtn").addEventListener("click", (event) => {
+         event.preventDefault();
+         fetch('http://localhost:8080/api/users/logout', {
+           method: 'GET',
+           credentials: 'include'
+         })
+         .then(response => {
+           if (response.ok) {
+             alert("로그아웃 되었습니다.");
+             window.location.href = "main.html";
+           } else {
+             alert("로그아웃 실패");
+           }
+         });
+       });
+
+       document.querySelectorAll('button[data-page]').forEach(button => {
+         button.addEventListener('click', () => {
+           const page = button.getAttribute('data-page');
+           window.location.href = `mydiary.html?page=${page}`;
+         });
+       });
+
+       // 유저 일기 불러오기
+       fetch(`http://localhost:8080/api/diary/user/${userId}`)
+          .then(response => response.json())
+          .then(diaries => {
+            diaries.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+            diaries.forEach((diary, index) => {
+              // 번호 div (_1, _2, ...)
+              const numberDiv = document.querySelector(`._${index + 1}`);
+              if (numberDiv) numberDiv.innerText = index + 1;
+
+              // tittle, tittle2, tittle3 ...
+              const titleEl = document.querySelector(index === 0 ? '.tittle' : `.tittle${index + 1}`);
+              if (titleEl) {
+                titleEl.innerText = diary.tittle;
+
+        titleEl.onclick = () => {
+          window.location.href = `diary.html?diaryId=${diary.diaryId}&date=${diary.date}`;
+        };
+
+              }
+
+      const moodEl = document.querySelector(index === 0 ? '.mood' : `.mood${index + 1}`);
+      if (moodEl) {
+        moodEl.innerHTML = `<span style="font-size: 3rem; position: relative; top: -16px;">${mapMoodToEmoji(diary.mood)}</span>`;
+      }
+
+      const weatherEl = document.querySelector(index === 0 ? '.weather' : `.weather${index + 1}`);
+      if (weatherEl) {
+        weatherEl.innerHTML = `<span style="font-size: 3rem; position: relative; top: -16px;">${mapWeatherToEmoji(diary.weather)}</span>`;
+      }
+
+        const timeEl = document.querySelector(index === 0 ? '.time' : `.time${index + 1}`);
+        if (timeEl) {
+          const time = diary.timeOfDay || "";
+          timeEl.innerText = time.length > 5 ? time.slice(0, 5) + "..." : time;
+        }
+
+
+              const dateEl = document.querySelector(index === 0 ? '.date' : `.date${index + 1}`);
+              if (dateEl) dateEl.innerText = diary.date;
+            });
+          })
+         .catch(() => {
+           document.getElementById("nav-buttons").innerHTML = `
+             <a href="join.html">Join</a>
+             <a href="login.html">Login</a>
+           `;
+         });
+     });
+   }
+
+   // 기분 이모지 매핑
+   function mapMoodToEmoji(mood) {
+     switch (mood) {
+       case "happy": return "😊";
+       case "sad": return "😢";
+       case "angry": return "😠";
+       case "soso": return "😳";
+       case "think": return "🧐";
+       default: return "😐";
+     }
+   }
+
+   // 날씨 이모지 매핑
+   function mapWeatherToEmoji(weather) {
+     switch (weather) {
+       case "sunny": return "☀️";
+       case "rainy": return "🌧️";
+       case "cloudy": return "☁️";
+       case "snow": return "🌨️";
+       case "thunder": return "⛈️";
+       default: return "🌈";
+     }
+   }
+ });
+  </script>
+  </body>
+</html>

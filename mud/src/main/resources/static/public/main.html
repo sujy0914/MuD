@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mud</title>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  /* 오늘 날짜 셀 배경 */
+  .fc .fc-daygrid-day.fc-day-today {
+    background-color: #fdecf0 !important;
+  }
+
+  /* <> 버튼 */
+  .fc .fc-button {
+    background-color: #fbecfd;
+    border-color: #fbecfd;
+    color: white;
+  }
+
+  /* hover 시 */
+  .fc .fc-button:hover {
+    background-color: #ffb6c1;
+    border-color: #ffb6c1;
+    cursor: pointer;
+  }
+
+  /* today 버튼 */
+  .fc .fc-today-button {
+    background-color: #fbf1fd !important;
+    border-color: #fbf1fd !important;
+  }
+
+  .fc .fc-today-button:hover {
+    background-color: #ffb6c1 !important;
+    border-color: #ffb6c1 !important;
+  }
+
+  #nav-buttons {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    font-size: 30px;
+    z-index: 1000;
+  }
+
+  #nav-buttons a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .clickable {
+    cursor: pointer;
+  }
+
+  .fc-event {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+.main-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .main-page .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+
+  .main-page .div-wrapper {
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    top: 300px;
+    left: 30px;
+    background-image: url(./img/rectangle-2.png);
+    background-size: 100% 100%;
+  }
+
+  .main-page .text-wrapper-2 {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    top: 26px;
+    left: 25px;
+    font-family: "Noto Sans-DisplayThin", Helvetica;
+    color: #000000ad;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .main-page .overlap-2 {
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    top: 300px;
+    left: 1230px;
+    background-image: url(./img/rectangle-3.png);
+    background-size: 100% 100%;
+  }
+
+  .main-page .overlap-3 {
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    top: 300px;
+    left: 632px;
+    background-image: url(./img/rectangle-4.png);
+    background-size: 100% 100%;
+  }
+
+  .main-page .text-wrapper-3 {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    top: 26px;
+    left: 25px;
+    font-family: "Noto Sans-DisplayThin", Helvetica;
+    color: #000000ad;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .main-page .text-wrapper-4 {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    top: 26px;
+    left: 25px;
+    font-family: "Noto Sans-DisplayThin", Helvetica;
+    color: #000000ad;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .main-page .overlap-group-2 {
+    position: absolute;
+    width: 1152px;
+    height: 611px;
+    top: 370px;
+    left: 156px;
+  }
+
+  .main-page .element {
+    width: 147px;
+    top: 910px;
+    left:0px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 21px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .main-page .span {
+    color: #00000099;
+  }
+
+  .main-page .text-wrapper-5 {
+    color: #eb7b798f;
+  }
+
+  .main-page .p {
+    width: 214px;
+    top: 910px;
+    left: 470px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 21px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .main-page .text-wrapper-6 {
+    color: #de72c79e;
+  }
+
+  .main-page .love-yourself {
+    position: absolute;
+    width: 500px;
+    top: 910px;
+    left: 850px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .main-page .text-wrapper-7 {
+    color: #9d6ac49e;
+  }
+
+  .main-page .text-wrapper-8 {
+    width: 985px;
+    height: 92px;
+    top: 170px;
+    left: 221px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #00000075;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+.calendar#calendar {
+  max-width: 3000px;
+  margin: 100px auto 0;
+}
+
+  </style>
+</head>
+<body>
+
+<div class="main-page">
+  <div class="div">
+    <div id="nav-buttons"></div>
+    <div id="header"></div>
+    <div class="div-wrapper">
+      <div class="text-wrapper-2 clickable" id="my-diary">내가 쓴 일기</div>
+    </div>
+    <div class="overlap-3">
+      <div class="text-wrapper-3 clickable" id="write-diary">일기 쓰기</div>
+    </div>
+    <div class="overlap-2">
+      <div class="text-wrapper-4 clickable" id="saved-songs">저장한 노래 목록</div>
+    </div>
+    <div class="overlap-group-2">
+      <div class="calendar" id="calendar"></div>
+      <p class="element"><span class="span">작성한 일기:</span><span class="text-wrapper-5" id="diary-count">개</span></p>
+      <p class="p"><span class="span">많이 기록한 감정:</span><span class="text-wrapper-6" id="top-emotion"></span></p>
+      <p class="love-yourself"><span class="span">가장 많이 들은 노래:</span><span class="text-wrapper-7" id="top-song"></span></p>
+    </div>
+    <p class="text-wrapper-8">
+      일기 한 줄 쓰면?<br />
+      🎵 오늘의 기분, 날씨, 시간에 딱 맞는 노래가 짠!
+    </p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // 전역 이모티콘 매핑
+    const emojiMap = {
+      "sad": "img/image 5.png",
+      "angry": "img/image 6.png",
+      "happy": "img/image 10.png",
+      "soso": "img/image 4.png",
+      "think": "img/image 37.png"
+    };
+
+    // 1. header.html 불러오기
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+        checkLoginStatus(); // header 삽입 후 로그인 상태 확인
+      });
+
+    let calendar; // 캘린더 객체를 전역으로 선언
+
+    // 2. 로그인 상태 확인 함수
+    function checkLoginStatus() {
+      fetch('http://localhost:8080/api/users/check-login', {
+        method: 'GET',
+        credentials: 'include'
+      })
+      .then(response => response.json())
+      .then(data => {
+        const navButtons = document.getElementById("nav-buttons");
+
+        if (data.isLoggedIn) {
+          navButtons.innerHTML = `
+            <a href="mypage.html">MyPage</a>
+            <a href="#" id="logoutBtn">Logout</a>
+          `;
+
+          document.getElementById("logoutBtn").addEventListener("click", (event) => {
+            event.preventDefault();
+            fetch('http://localhost:8080/api/users/logout', {
+              method: 'GET',
+              credentials: 'include'
+            })
+            .then(response => {
+              if (response.ok) {
+                alert("로그아웃 되었습니다.");
+                window.location.href = "main.html";
+              } else {
+                alert("로그아웃 실패");
+              }
+            });
+          });
+
+          // 다이어리 데이터 불러오기
+          fetchUserDiaryData(data.userId);
+
+        } else {
+          navButtons.innerHTML = `
+            <a href="join.html">Join</a>
+            <a href="login.html">Login</a>
+          `;
+        }
+      })
+      .catch(() => {
+        document.getElementById("nav-buttons").innerHTML = `
+          <a href="join.html">Join</a>
+          <a href="login.html">Login</a>
+        `;
+      });
+    }
+
+    // FullCalendar 초기화
+    const calendarEl = document.getElementById('calendar');
+    if (calendarEl) {
+      calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        height: 800,
+        events: [], // 초기 비움
+        eventContent: function(arg) {
+          const mood = arg.event.title.toLowerCase();
+          const imgFile = emojiMap[mood] || "img/image 9.png";
+          const img = document.createElement("img");
+          img.src = imgFile;
+          img.style.width = "45px";
+          img.style.height = "45px";
+          img.style.border = "none";
+          img.style.background = "transparent";
+          img.style.cursor = "pointer";
+          img.style.display = "block";
+          img.style.margin = "0 auto";
+
+          img.addEventListener("click", () => {
+            window.location.href = "mydiary.html";
+          });
+
+          return { domNodes: [img] };
+        },
+        eventDisplay: "block"
+      });
+      calendar.render();
+    }
+
+    // 3. 사용자 일기 데이터 불러오기
+    function fetchUserDiaryData(userId) {
+      fetch(`http://localhost:8080/api/diary/summary/${userId}`, {
+        method: 'GET',
+        credentials: 'include'
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log("API 응답:", data);
+        // 작성한 일기 개수
+        document.getElementById("diary-count").textContent = `${data.diaryCount}개`;
+
+        let topMood = data.topMood && data.topMood.trim() !== "" ? data.topMood.toLowerCase() : null;
+
+        if (!topMood) {
+          const moodCounts = {};
+          data.diaries.forEach(entry => {
+            const mood = entry.mood && entry.mood.trim().toLowerCase();
+            if (mood) {
+              moodCounts[mood] = (moodCounts[mood] || 0) + 1;
+            }
+          });
+
+          console.log("감정 카운트:", moodCounts); // 디버깅용
+
+          let maxCount = 0;
+          for (const mood in moodCounts) {
+            if (moodCounts[mood] > maxCount) {
+              topMood = mood;
+              maxCount = moodCounts[mood];
+            }
+          }
+        }
+
+        console.log("Top Mood:", topMood);
+
+        const topMoodImg = topMood && emojiMap[topMood]
+          ? `<img src="${emojiMap[topMood]}" alt="${topMood}" style="width:24px; height:24px; vertical-align:middle;">`
+          : "-";
+        document.getElementById("top-emotion").innerHTML = topMoodImg;
+
+        // top-song 표시 (가수의 노래 제목)
+        document.getElementById("top-song").innerHTML = data.topSong
+          ? (() => {
+              const [title, artist] = data.topSong.split(" - ");
+              return `${artist}의<br>'${title}'`;
+            })()
+          : "-";
+
+        // 캘린더에 감정 표시
+        if (calendar && data.diaries) {
+          data.diaries.forEach(entry => {
+            calendar.addEvent({
+              title: entry.mood,
+              start: entry.date
+            });
+          });
+        }
+      })
+      .catch(error => {
+        console.error("일기 데이터를 불러오는 중 오류 발생:", error);
+      });
+    }
+
+    // 4. 페이지 이동 버튼 처리
+    const go = (id, target) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener("click", () => {
+          window.location.href = target;
+        });
+      }
+    };
+
+    go("my-diary", "mydiary.html");
+    go("saved-songs", "savedsongs.html");
+    go("write-diary", "diary.html");
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mud</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    .select-song-page {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 1440px;
+        height: 1024px;
+        align-items: stretch;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .image-35 {
+        position: absolute;
+        width: 800px;
+        height: 800px;
+        top: 200px;
+        left: 700px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .div {
+        position: absolute;
+        top: 730px;
+        font-size: 40px;
+        font-weight: 400;
+        color: #000;
+    }
+
+    .singer-tittle{
+        position:absolute;
+        top: 800px;
+        font-size: 30px;
+        color: #000;
+    }
+
+    .sing {
+        position:absolute;
+        top: 850px;
+        font-size: 30px;
+        color: #000;
+    }
+
+    .buttons {
+        position: absolute;
+        top: 1170px;
+        display: flex;
+        gap: 40px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button {
+        background: rgba(243, 229, 245, 0.83);
+        padding: 20px 34px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.68);
+        transition: background 0.3s ease;
+    }
+
+    .button:hover {
+        background: rgba(200, 200, 255, 0.9);
+    }
+
+    .clickable {
+      cursor: pointer;
+    }
+     #nav-buttons {
+      position: absolute;
+      top: 60px;
+      right: 0px;
+      font-size: 30px;
+      z-index: 1000;
+    }
+    #nav-buttons a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    </style>
+</head>
+<body style="padding: 20px;">
+<div class="select-song-page">
+        <div id="nav-buttons"></div>
+        <div id="header"></div>
+        <img class="image-35" src="img/image 35.png" />
+        <div class="div">일기 작성, 노래 선택 완료!</div>
+        <div class="singer-tittle">오늘 선택한 노래는</div>
+        <div class="sing">“<span id="singer-name"></span>”의 “<span id="song-title"></span>”</div>
+
+        <div class="buttons">
+            <div class="button" id="go-diary">일기보러 가기</div>
+            <div class="button" id="go-songs">노래 들으러 가기</div>
+            <div class="button" id="go-main">메인</div>
+        </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+    // checkLoginStatus 함수 선언
+    function checkLoginStatus() {
+        fetch('http://localhost:8080/api/users/check-login', {
+            method: 'GET',
+            credentials: 'include'
+        })
+        .then(response => response.json())
+        .then(data => {
+            const navButtons = document.getElementById("nav-buttons");
+
+            if (data.isLoggedIn) {
+                navButtons.innerHTML = `
+                    <a href="mypage.html">MyPage</a>
+                    <a href="#" id="logoutBtn">Logout</a>
+                `;
+                document.getElementById("logoutBtn").addEventListener("click", (event) => {
+                    event.preventDefault();
+                    fetch('http://localhost:8080/api/users/logout', {
+                        method: 'GET',
+                        credentials: 'include'
+                    }).then(response => {
+                        if (response.ok) {
+                            alert("로그아웃 되었습니다.");
+                            window.location.href = "main.html";
+                        } else {
+                            alert("로그아웃 실패");
+                        }
+                    });
+                });
+            } else {
+                navButtons.innerHTML = `
+                    <a href="join.html">Join</a>
+                    <a href="login.html">Login</a>
+                `;
+            }
+        })
+        .catch(() => {
+            const navButtons = document.getElementById("nav-buttons");
+            navButtons.innerHTML = `
+                <a href="join.html">Join</a>
+                <a href="login.html">Login</a>
+            `;
+        });
+    }
+
+    // header.html 삽입
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+
+            // 헤더 삽입 후 버튼 이벤트 등록
+            document.getElementById('go-diary').addEventListener('click', function() {
+                window.location.href = 'mydiary.html';
+            });
+
+            document.getElementById('go-main').addEventListener('click', function() {
+                window.location.href = 'main.html';
+            });
+
+            document.getElementById('go-songs').addEventListener('click', function() {
+                window.location.href = 'savedsongs.html';
+            });
+
+            // 저장된 노래 정보 출력
+            const savedSong = JSON.parse(localStorage.getItem('savedSong'));
+            if (savedSong && savedSong.artist && savedSong.title) {
+                document.getElementById("singer-name").textContent = savedSong.artist;
+                document.getElementById("song-title").textContent = savedSong.title;
+            } else {
+                console.error("저장된 노래 정보가 없습니다.");
+                document.getElementById("singer-name").textContent = "정보 없음";
+                document.getElementById("song-title").textContent = "정보 없음";
+            }
+
+            // 헤더가 삽입된 후에 로그인 상태 체크
+            checkLoginStatus();
+        })
+        .catch(error => {
+            console.error("헤더 불러오기 실패:", error);
+        });
+
+});
+</script>
+    </body>
+    </html>
