@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 
@@ -18,8 +19,9 @@ import java.time.LocalDateTime;
 public class Diary {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 증가 설정
     @Column(name = "diary_id")
-    private String diaryId;
+    private Long diaryId;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
@@ -28,10 +30,11 @@ public class Diary {
     private String content;
     private String weather;
     private String mood;
+    private String tittle;
 
     @Column(name = "time_of_day")
     private String timeOfDay;
 
-    private LocalDateTime createdAt;
+    private LocalDate date;
 
 }

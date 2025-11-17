@@ -15,14 +15,16 @@ public interface UserRepository extends JpaRepository<User, String> {
 
     Optional<User> findByUserId(String userId);
 
-    // 회원 조회 - 모든 회원 정보 조회
-    List<User> findAll();
+    User findByUsernameAndEmail(String username, String email);
+
+    // 아이디 + 이름 + 이메일로 회원 조회
+    User findByUserIdAndUsernameAndEmail(String userId, String username, String email);
 
     // 회원 수정 - 전화번호만 변경 가능
     @Modifying
     @Transactional
-    @Query("UPDATE User u SET u.phone = :phone WHERE u.userId = :userId")
-    int updatePhone(@Param("userId") String userId, @Param("phone") String phone);  // String으로 수정
+    @Query("UPDATE User u SET u.email = :email WHERE u.userId = :userId")
+    int updateEmail(@Param("userId") String userId, @Param("email") String email);
 
     // 회원 탈퇴 - 로그인된 회원의 아이디를 탈퇴 시킨다.
     @Modifying

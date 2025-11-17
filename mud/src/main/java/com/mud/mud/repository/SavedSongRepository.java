@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface SavedSongRepository extends JpaRepository<SavedSong, String> {
     List<SavedSong> findByUserId(String userId);
-    List<SavedSong> findByDiaryId(String diaryId);
+    List<SavedSong> findByDiaryId(Long diaryId);
 }

@@ -11,21 +11,20 @@ import java.util.List;
 public class SavedSongService {
 
     @Autowired
-    private SavedSongRepository savedSongRepository;
+    private final SavedSongRepository savedSongRepository;
+
+    public SavedSongService(SavedSongRepository savedSongRepository) {
+        this.savedSongRepository = savedSongRepository;
+    }
 
     public SavedSong saveSong(SavedSong savedSong) {
-        return savedSongRepository.save(savedSong);
+        return savedSongRepository.save(savedSong);  // 모든 필드 저장
     }
 
     public List<SavedSong> getSongsByUserId(String userId) {
         return savedSongRepository.findByUserId(userId);
     }
 
-    public List<SavedSong> getSongsByDiaryId(String diaryId) {
-        return savedSongRepository.findByDiaryId(diaryId);
-    }
-
     public List<SavedSong> getAllSavedSongs() {
         return savedSongRepository.findAll();
-    }
-}
+    }}

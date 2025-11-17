@@ -3,6 +3,8 @@ package com.mud.mud.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -11,21 +13,23 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SavedSong {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  // 숫자 자동 증가
     @Column(name = "saved_id")
-    private String savedId;
+    private int savedId;
 
     @Column(name = "user_id")
     private String userId;
 
     @Column(name = "diary_id")
-    private String diaryId;
+    private Long diaryId;
 
-    @Column(name = "spotify_id")
-    private String spotifyId;
     private String title;
     private String artist;
-    private String album;
 
+    private LocalDate date;
+
+    private String url;
 
 }

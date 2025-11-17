@@ -22,6 +22,8 @@ public class ProjectConfig {
                         CorsConfiguration config = new CorsConfiguration();
                         config.setAllowedOriginPatterns(List.of("http://localhost:3000"));
                         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE"));
+                        config.setAllowCredentials(true);  // 이거 반드시 추가해야 함
+                        config.setAllowedHeaders(List.of("*"));  // 이 라인도 권장
                         return config;
                     };
                     c.configurationSource(source);
